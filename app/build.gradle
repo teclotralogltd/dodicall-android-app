@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
+
+    defaultConfig {
+        applicationId 'com.telco.dodicall'
+        minSdkVersion 14
+        targetSdkVersion 24
+
+        versionCode 4
+        versionName "2.8.9.5"
+
+        testApplicationId 'ru.swisstok.dodicall.c_test'
+        testInstrumentationRunner 'ru.swisstok.dodicall.c_test.CucuRunner'
+
+        vectorDrawables.generatedDensities = []
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            setJniDebuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+def androidSupportLibraries = [
+        "com.android.support:appcompat-v7:$supportLibraryVersion",
+        "com.android.support:design:$supportLibraryVersion",
+        "com.android.support:support-v4:$supportLibraryVersion",
+        "com.android.support:preference-v7:$supportLibraryVersion",
+        "com.android.support:recyclerview-v7:$supportLibraryVersion",
+        "com.android.support:preference-v14:$supportLibraryVersion",
+        "com.android.support:gridlayout-v7:$supportLibraryVersion"
+]
+
+def androidServicesLibraries = [
+        "com.google.android.gms:play-services-gcm:$servicesLibraryVersion"
+]
+
+dependencies {
+    compile androidSupportLibraries
+    compile androidServicesLibraries
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics-ndk:1.1.2@aar') {
+        transitive = true;
+    }
+
+    //SUB-DEPENDENCIES
+    //Android-Iconics - used to provide an easy API for icons
+    //tests
+
+    compile 'ru.uls_global.dodicall:DodicallBridgeAndroid:2.8.9.12@aar'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile 'com.annimon:stream:1.1.3'
+    compile 'com.mikepenz:actionitembadge:3.2.2@aar'
+    compile 'com.mikepenz:iconics-core:2.5.8@aar'
+    compile 'org.parceler:parceler-api:1.1.5'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.1.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'me.leolin:ShortcutBadger:1.1.10@aar'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'info.cukes:cucumber-android:1.2.0@jar'
+    androidTestCompile 'info.cukes:cucumber-picocontainer:1.2.0'
+    annotationProcessor 'org.parceler:parceler:1.1.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.1.3'
+}
+
+crashlytics {
+    enableNdk true
+    androidNdkOut 'src/main/obj'
+    androidNdkLibsOut 'src/main/libs'
+}

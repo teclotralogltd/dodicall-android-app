@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/generated_key_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generated_key_message"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/key_import_title"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/medium_text_size"/>
+
+    <TextView
+        android:id="@+id/generated_key_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/key_import_message"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/small_text_size"/>
+
+    <View
+        android:id="@+id/save_to_file_btn"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generated_key_message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/copy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/save_to_file_btn"
+        android:layout_toLeftOf="@id/save_to_file_btn"
+        android:layout_toStartOf="@id/save_to_file_btn"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/copy_wrapper"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:onClick="onClick"
+        android:text="@string/import_key_from_clipboard"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/small_text_size"/>
+
+    <TextView
+        android:id="@+id/qr_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/save_to_file_btn"
+        android:layout_toEndOf="@id/save_to_file_btn"
+        android:layout_toRightOf="@id/save_to_file_btn"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/qr_wrapper"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:onClick="onClick"
+        android:text="@string/import_key_from_qr"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/small_text_size"/>
+
+    <Button
+        android:id="@+id/skip_import_key_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_green"
+        android:onClick="onClick"
+        android:text="@string/continue_without_key_saving"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+</RelativeLayout>

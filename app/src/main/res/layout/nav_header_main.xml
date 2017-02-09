@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/profile_info_section"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@drawable/profile_background"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/profile_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profile_name_section"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/profile_name_section"
+            app:srcCompat="@drawable/ic_chevron_right"/>
+
+        <LinearLayout
+            android:id="@+id/profile_name_section"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/profile_arrow"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/small_text_size"/>
+
+            <TextView
+                android:id="@+id/profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/contacts_list_item_status_ic"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/contacts_list_item_status_ic"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/base_user_status_offline"
+                android:textAppearance="@style/AppTheme.NavItem.Title"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/small_text_size"/>
+
+        </LinearLayout>
+
+        <ru.swisstok.dodicall.view.RoundedImageView
+            android:id="@+id/nav_profile_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="24dp"
+            android:layout_above="@id/profile_name_section"
+            android:background="@drawable/primary_light_outside"
+            app:defaultImage="@drawable/no_photo_big"
+            app:showDefaultImageImmediately="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_width"
+        android:background="@color/dividerColor"/>
+
+    <LinearLayout
+        android:id="@+id/nav_drawer_items_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/drawer_balance_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/balance_wrapper"/>
+
+            <include layout="@layout/divider_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nav_drawer_preferences"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawableLeft="@drawable/ic_settings_wrapper"
+        android:drawablePadding="@dimen/default_padding"
+        android:drawableStart="@drawable/ic_settings_wrapper"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:text="@string/title_activity_settings"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.NavItem.Title"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/small_text_size"/>
+
+    <Button
+        android:id="@+id/nav_drawer_logout"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:drawableLeft="@drawable/ic_exit_to_app_wrapper"
+        android:drawablePadding="@dimen/default_padding"
+        android:drawableStart="@drawable/ic_exit_to_app_wrapper"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:text="@string/title_activity_logout"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTheme.NavItem.Title"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/small_text_size"/>
+</LinearLayout>

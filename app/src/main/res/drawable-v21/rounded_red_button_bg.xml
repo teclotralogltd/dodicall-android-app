@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/dark_highlight">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" />
+            <corners android:radius="@dimen/rounded_button_height" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/rounded_red_button_default_bg" />
+</ripple>

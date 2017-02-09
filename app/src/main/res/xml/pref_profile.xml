@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/pref_profile_profile_title">
+        <intent android:action="ru.swisstok.dodicall.action.open_personal_profile"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="@string/pref_profile_balance_title"
+        android:summary="@string/pref_profile_balance_summary_default">
+    </PreferenceScreen>
+</PreferenceScreen>

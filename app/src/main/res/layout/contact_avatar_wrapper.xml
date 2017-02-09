@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/contact_avatar_wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/contact_item_height"
+    android:layout_height="@dimen/contact_item_height"
+    android:paddingBottom="15dp"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="16dp"
+    android:paddingTop="15dp">
+
+    <ru.swisstok.dodicall.view.RoundedImageView
+        android:id="@+id/contact_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:defaultImage="@drawable/no_photo_user"
+        />
+
+    <ImageView
+        android:id="@+id/contact_is_dodicall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/d_medium"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+</RelativeLayout>

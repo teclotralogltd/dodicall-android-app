@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:homeAsUpIndicator">@drawable/back</item>
+        <item name="homeAsUpIndicator">@drawable/back</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/AppTheme.ActionModeStyle</item>
+
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeSplitBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseDrawable">@drawable/back</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Main" parent="@style/AppTheme.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

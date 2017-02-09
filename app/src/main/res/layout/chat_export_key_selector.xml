@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+  ~
+  ~ This file is part of dodicall.
+  ~ dodicall is free software : you can redistribute it and / or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~ dodicall is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/copy_key_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/copy_black_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/copy_black_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/copy_key"
+        android:textSize="@dimen/default_text_size"/>
+
+    <TextView
+        android:id="@+id/save_to_file_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/file_download_black_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/file_download_black_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/download_key"
+        android:textSize="@dimen/default_text_size"/>
+
+    <TextView
+        android:id="@+id/share_key_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/share_black_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/share_black_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/share_key"
+        android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

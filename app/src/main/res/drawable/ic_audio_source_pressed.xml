@@ -1,0 +1,37 @@
+<!--
+  ~
+  ~ Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+  ~
+  ~ This file is part of dodicall.
+  ~ dodicall is free software : you can redistribute it and / or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~ dodicall is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="66dp"
+        android:height="66dp"
+        android:viewportHeight="66.0"
+        android:viewportWidth="66.0">
+    <path
+        android:fillColor="#b3ffffff"
+        android:pathData="M33,0A33,33 0,1 0,66 33,33 33,0 0,0 33,0ZM33,64A31,31 0,1 1,64 33,31 31,0 0,1 33,64Z"/>
+    <path
+        android:fillColor="#b3ffffff"
+        android:pathData="M35,24.23v2.06a7,7 0,0 1,0 13.42v2.06a9,9 0,0 0,0 -17.54Z"/>
+    <path
+        android:fillColor="#b3ffffff"
+        android:pathData="M24,30l0,6l4,0l5,5l0,-16l-5,5l-4,0z"/>
+    <path
+        android:fillColor="#b3ffffff"
+        android:pathData="M37.5,33A4.5,4.5 0,0 0,35 29V37A4.47,4.47 0,0 0,37.5 33Z"/>
+</vector>

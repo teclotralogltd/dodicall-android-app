@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/dialpad_no_connect_selected"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/dialpad_no_connect_selected"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/dialpad_edge_selected"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/dialpad_3g_selected"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/dialpad_lte_selected"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@drawable/dialpad_wifi_selected"
+        android:maxLevel="5"/>
+</level-list>

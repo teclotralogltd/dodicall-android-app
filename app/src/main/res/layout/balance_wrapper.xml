@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balance_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@id/nav_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_padding"
+        android:textAppearance="@style/AppTheme.NavItem.Title"
+        android:text="@string/nav_drawer_menu_balance"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/AppTheme.NavItem.Title"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/nav_item_balance"
+        />
+    <ImageButton
+        android:id="@+id/nav_item_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/balance"
+        android:background="@drawable/primary_light_outside"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/default_padding"
+        android:paddingLeft="@dimen/default_padding"
+        />
+</RelativeLayout>

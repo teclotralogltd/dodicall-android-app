@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chat_title_text"
+                style="@style/AppTheme.Contact.NameWithStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_selected"
+                tools:text="Vasya Ivanov"/>
+
+            <TextView
+                android:id="@+id/chat_sub_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/tab_selected"
+                android:textSize="13sp"
+                tools:text="last login 13.33"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reply_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_line_divider"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/reply_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="?android:attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_clear_black_24px"/>
+
+            <TextView
+                android:id="@+id/reply_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:textSize="@dimen/small_text_size"
+                tools:text="Ivan Ivanovich"/>
+
+            <TextView
+                android:id="@+id/reply_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/small_text_size"
+                tools:text="28.11.2303 12:44"/>
+
+            <TextView
+                android:id="@+id/reply_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size"
+                tools:text="Ivan Ivanovich"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/attach_button"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/attach"/>
+
+            <EditText
+                android:id="@+id/message_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/enter_message"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLines="7"/>
+
+            <ImageButton
+                android:id="@+id/voice_button"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/voice_mes"/>
+
+            <FrameLayout
+                android:layout_width="46dp"
+                android:layout_height="46dp">
+
+                <ImageButton
+                    android:id="@+id/picture_button"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/take_a_photo"/>
+
+                <ImageButton
+                    android:id="@+id/send_button"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/send"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/message_container"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar"/>
+
+</RelativeLayout>

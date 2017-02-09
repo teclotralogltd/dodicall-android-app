@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="12dp">
+
+    <ru.swisstok.dodicall.view.RoundedImageView
+        android:id="@+id/shared_contact_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:defaultImage="@drawable/no_photo_user"
+        tools:src="@drawable/no_photo_user"/>
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignBottom="@id/shared_contact_avatar"
+        android:layout_alignEnd="@id/shared_contact_avatar"
+        android:layout_alignRight="@id/shared_contact_avatar"
+        android:clickable="false"
+        android:src="@drawable/d_medium"/>
+
+    <TextView
+        android:id="@+id/shared_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/shared_contact_avatar"
+        android:layout_toRightOf="@id/shared_contact_avatar"
+        android:clickable="false"
+        android:textColor="@android:color/black"
+        tools:text="Ma askdjfh asdkjfh a"/>
+
+</RelativeLayout>

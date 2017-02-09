@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_line_row_height"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ru.swisstok.dodicall.view.RoundedImageView
+        android:id="@+id/contact_avatar"
+        android:layout_width="@dimen/row_avatar_size"
+        android:layout_height="@dimen/row_avatar_size"
+        android:layout_centerVertical="true"
+        app:defaultImage="@drawable/no_photo_user"/>
+
+    <ImageView
+        android:id="@+id/contact_is_dodicall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/contact_avatar"
+        android:layout_alignEnd="@id/contact_avatar"
+        android:layout_alignRight="@id/contact_avatar"
+        android:src="@drawable/d_medium"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/call_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:srcCompat="@drawable/contacts_list_item_call_ic"/>
+
+        <ImageView
+            android:id="@+id/chat_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:srcCompat="@drawable/contacts_list_item_chat_ic"/>
+
+        <ImageView
+            android:id="@+id/add_to_contacts_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:srcCompat="@drawable/ic_add_to_saved"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_name_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_toLeftOf="@id/buttons_container"
+        android:layout_toStartOf="@id/buttons_container"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_name"
+            style="@style/AppTheme.Contact.Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="FirstName LastName"/>
+
+        <TextView
+            android:id="@+id/contact_status"
+            style="@style/AppTheme.Contact.Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/contacts_list_item_status_ic"
+            android:drawablePadding="8dp"
+            android:text="@string/base_user_status_offline"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_gray"/>
+</RelativeLayout>

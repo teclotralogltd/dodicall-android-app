@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ru.swisstok.view.NavDrawerItem">
+        <attr name="ndi_icon" format="reference"/>
+        <attr name="ndi_text" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ru.swisstok.preference.SeekBarPreference">
+        <attr name="minValue" format="integer|reference"/>
+        <attr name="maxValue" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ru.swisstok.preference.SaveDbPreference">
+        <attr name="tableColumn" format="string|reference"/>
+    </declare-styleable>
+
+    <attr name="codecType" format="enum">
+        <enum name="CodecTypeAudio" value="0"/>
+        <enum name="CodecTypeVideo" value="1"/>
+    </attr>
+
+    <attr name="connectionType" format="enum">
+        <enum name="ConnectionTypeCell" value="0"/>
+        <enum name="ConnectionTypeWifi" value="1"/>
+    </attr>
+
+    <declare-styleable name="ru.swisstok.preference.CodecCustomSwitchPreference">
+        <attr name="codecName" format="string|reference"/>
+        <attr name="codecType"/>
+        <attr name="connectionType"/>
+    </declare-styleable>
+
+    <attr name="dialpadStyle" format="reference"/>
+
+    <declare-styleable name="Dialpad">
+        <attr name="dividerColor" format="color|reference"/>
+        <attr name="textColorNumber" format="color|reference"/>
+        <attr name="textColorSubNumber" format="color|reference"/>
+        <attr name="buttonBackground" format="color|reference"/>
+        <attr name="number" format="string|reference"/>
+        <attr name="sub_number" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AlphabetContactsView">
+        <attr name="dotRadius" format="dimension"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="android:divider"/>
+        <attr name="android:dividerHeight"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="defaultImage" format="reference|integer"/>
+        <attr name="showDefaultImageImmediately" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_blocked_wrapper"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingTop="16dp"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingBottom="18dp"
+    android:orientation="vertical"
+    tools:visibility="visible">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/blocked_big"
+        android:drawablePadding="16dp"
+        android:textAppearance="@style/AppTheme.Profile.BlockedTextTextAppearance"
+        android:text="@string/profile_blocked_title"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        />
+    <Button
+        android:id="@+id/profile_unblock"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_red_button_bg"
+        android:textAppearance="@style/AppTheme.Profile.UnblockButtonTextAppearance"
+        android:text="@string/profile_unblock_button_text"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+</LinearLayout>

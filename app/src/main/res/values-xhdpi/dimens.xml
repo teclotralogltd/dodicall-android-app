@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_secondary_text_size">16sp</dimen>
+    <dimen name="login_bottom_margin">0dp</dimen>
+
+    <dimen name="dialpad_button_width">116dp</dimen>
+    <dimen name="dialpad_button_height">70dp</dimen>
+    <dimen name="dialpad_button_text_size_number">38sp</dimen>
+    <dimen name="dialpad_button_text_size_sub_number">17sp</dimen>
+    <dimen name="dialpad_button_conference_text_size">12sp</dimen>
+    <dimen name="dialpad_button_tariff_text_size">12sp</dimen>
+    <dimen name="dialpad_text_size_contact_info">16sp</dimen>
+    <dimen name="dialpad_text_size_number">25sp</dimen>
+    <dimen name="dialpad_button_top_button_size">40dp</dimen>
+</resources>

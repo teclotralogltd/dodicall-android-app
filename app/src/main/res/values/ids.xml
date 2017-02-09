@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="nav_item_icon"/>
+    <item type="id" name="nav_item_text"/>
+    <item type="id" name="min_value"/>
+    <item type="id" name="max_value"/>
+    <item type="id" name="switchWidget"/>
+    <item type="id" name="nav_profile_avatar"/>
+    <item type="id" name="nav_item_balance"/>
+    <item type="id" name="login_wrapper"/>
+    <item type="id" name="big_logo"/>
+    <item type="id" name="bottom_buttons"/>
+    <item type="id" name="extra_buttons_wrapper"/>
+</resources>

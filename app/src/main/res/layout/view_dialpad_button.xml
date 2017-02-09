@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded">
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textSize="@dimen/dialpad_button_text_size_number"
+        tools:text="1"
+        />
+    <TextView
+        android:id="@+id/sub_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textAllCaps="true"
+        android:textSize="@dimen/dialpad_button_text_size_sub_number"
+        tools:text="ABC"
+        />
+</merge>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="white_list_count">
+        <item quantity="one">%1$d contact</item>
+        <item quantity="other">%1$d contacts</item>
+    </plurals>
+
+    <plurals name="chat_accounts_count">
+        <item quantity="one">%1$d user</item>
+        <item quantity="other">%1$d users</item>
+    </plurals>
+    <plurals name="delete_chats_count">
+        <item quantity="one">Delete %1$d chat</item>
+        <item quantity="other">Delete %1$d chats</item>
+    </plurals>
+    <plurals name="delete_messages_count">
+        <item quantity="one">Delete %1$d message</item>
+        <item quantity="other">Delete %1$d messages</item>
+    </plurals>
+
+    <plurals name="notification_messages_count">
+        <item quantity="one">%1$d new message</item>
+        <item quantity="other">%1$d new messages</item>
+    </plurals>
+
+    <plurals name="notification_chats_count">
+        <item quantity="one">%1$d chat</item>
+        <item quantity="other">%1$d chats</item>
+    </plurals>
+
+    <plurals name="notification_invitation_to_chats_count">
+        <item quantity="one">%1$d new invitation to chat</item>
+        <item quantity="other">%1$d new invitations to chat</item>
+    </plurals>
+
+    <plurals name="notification_invitations_count">
+        <item quantity="one">%1$d new invitation</item>
+        <item quantity="other">%1$d new invitations</item>
+    </plurals>
+
+</resources>

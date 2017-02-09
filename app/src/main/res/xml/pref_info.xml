@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="pref_info_about"
+        android:title="@string/pref_info_about_title">
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="pref_info_what_new"
+        android:title="@string/pref_info_what_new_title">
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="pref_info_known_issues"
+        android:title="@string/pref_info_known_bugs_title">
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="pref_info_help"
+        android:title="@string/pref_info_help_title">
+    </PreferenceScreen>
+</PreferenceScreen>

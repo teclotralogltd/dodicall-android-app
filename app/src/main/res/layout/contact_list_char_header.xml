@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="center_vertical"
+    android:paddingEnd="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="0dp"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:textAppearance="@style/AppTheme.Contact.Header.TextAppearance"
+    android:textColor="@color/main_gray"
+    android:textSize="14sp"
+    tools:text="A"/>

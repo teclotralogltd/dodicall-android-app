@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="white_list_count">
+        <item quantity="one">%1$d kontak</item>
+        <item quantity="other">%1$d kontaklar</item>
+    </plurals>
+    <plurals name="chat_accounts_count">
+        <item quantity="one">%1$d kullanıcı</item>
+        <item quantity="other">%1$d kullanıcılar</item>
+    </plurals>
+    <plurals name="delete_chats_count">
+        <item quantity="one">Sil %1$d sohbeti</item>
+        <item quantity="other">Sil %1$d sohbetleri</item>
+    </plurals>
+    <plurals name="delete_messages_count">
+        <item quantity="one">Sil %1$d mesajı</item>
+        <item quantity="other">Sil %1$d mesajları</item>
+    </plurals>
+    <plurals name="notification_messages_count">
+        <item quantity="one">%1$d yeni mesaj</item>
+        <item quantity="other">%1$d yeni mesajlar</item>
+    </plurals>
+    <plurals name="notification_chats_count">
+        <item quantity="one">%1$d sohbet</item>
+        <item quantity="other">%1$d sohbetler</item>
+    </plurals>
+    <plurals name="notification_invitation_to_chats_count">
+        <item quantity="one">%1$d sohbete yeni davet</item>
+        <item quantity="other">%1$d sohbete yeni davetler</item>
+    </plurals>
+    <plurals name="notification_missed_calls_count">
+        <item quantity="one">%1$d cevapsız arama</item>
+        <item quantity="other">%1$d cevapsız aramalar</item>
+    </plurals>
+    <plurals name="notification_invitations_count">
+        <item quantity="one">%1$d yeni davet</item>
+        <item quantity="other">%1$d yeni davetler</item>
+    </plurals>
+</resources>

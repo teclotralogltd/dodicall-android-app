@@ -1,0 +1,406 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Dialpad">
+    </style>
+
+    <style name="Dialpad.Default">
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/tab_selected</item>
+    </style>
+
+    <style name="Dialpad.Light">
+        <item name="dividerColor">@color/dividerColor</item>
+        <item name="textColorNumber">#000000</item>
+        <item name="textColorSubNumber">#e6001e</item>
+        <item name="buttonBackground">@drawable/primary_light</item>
+    </style>
+
+    <style name="Dialpad.Dark">
+        <item name="dividerColor">@android:color/white</item>
+        <item name="textColorNumber">@android:color/white</item>
+        <item name="textColorSubNumber">@android:color/white</item>
+        <item name="buttonBackground">@color/call_screen_bg</item>
+    </style>
+
+    <style name="AppThemeProgress" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress</item>
+    </style>
+
+    <style name="AppTheme.Log">
+        <item name="homeAsUpIndicator">@android:drawable/ic_menu_close_clear_cancel</item>
+        <item name="android:fastScrollEnabled">true</item>
+    </style>
+
+    <style name="AppTheme.DdcSearch">
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen.ActiveCall">
+        <item name="android:windowBackground">@color/call_screen_bg</item>
+        <item name="dialpadStyle">@style/Dialpad.Dark</item>
+    </style>
+
+    <style name="AppThemeToolbarButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/toolbar_button</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+        <item name="colorControlNormal">@color/tab_selected</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleStyle</item>
+    </style>
+
+    <style name="ActionBar.TitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/tab_selected</item>
+    </style>
+
+    <style name="AppTheme.ActionModeStyle" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/ActionMode.TitleStyle</item>
+    </style>
+
+    <style name="ActionMode.TitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@color/main_text_color</item>
+    </style>
+
+    <style name="AppPreferenceFragmentListStyle" parent="PreferenceFragmentList.Material">
+        <item name="android:paddingLeft">@dimen/preference_padding</item>
+        <item name="android:paddingRight">@dimen/preference_padding</item>
+    </style>
+    <!--<style name="AppPreferenceFragmentStyle" parent="PreferenceFragment.Material">
+        <item name="android:paddingStart">28dp</item>
+        <item name="android:paddingEnd">28dp</item>
+    </style>-->
+    <style name="Preference_TextAppearanceMaterialBody2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ActionOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="srcCompat">@drawable/other_wrapper</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:windowTitleStyle">@style/AppTheme.Dialog.WindowTitle</item>
+        <item name="windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:progressBarStyle">@style/AppThemeProgress</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+
+    <style name="AppTheme.Dialog.WindowTitle" parent="RtlOverlay.DialogWindowTitle.AppCompat">
+        <item name="android:textAppearance">@style/AppTheme.Dialog.WindowTitle.Title</item>
+    </style>
+
+    <style name="AppTheme.Dialog.WindowTitle.Title" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <!-- TODO: move all widgets to AppTheme.Widget -->
+    <style name="AppTheme.LoginTextInput" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/AppTheme.LoginTextInput.Text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/login_input_bg</item>
+    </style>
+
+    <style name="AppTheme.LoginTextInput.Text">
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.LoginSecondaryText">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/AppTheme.LoginSecondaryText.Text</item>
+    </style>
+
+    <style name="AppTheme.LoginSecondaryText.Text">
+        <item name="android:textSize">@dimen/login_secondary_text_size</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.LoginLink">
+        <item name="android:textAppearance">@style/AppTheme.LoginLink.Text</item>
+    </style>
+
+    <style name="AppTheme.LoginLink.Text">
+        <item name="android:textColor">@color/link_text</item>
+        <item name="android:textSize">@dimen/login_link_text_size</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.LoginLangSpinner">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="AppTheme.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:dropDownSelector">?attr/selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:overlapAnchor" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="AppTheme.TabWidget" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/AppTheme.TabWidget.Title</item>
+        <item name="tabTextColor">#7d7d7d</item>
+        <item name="tabSelectedTextColor">@color/tabTitleSelected</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.NavItem">
+    </style>
+
+    <style name="AppTheme.NavItem.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#7d7d7d</item>
+    </style>
+
+    <style name="AppTheme.TabWidget.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.CheckBox">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="buttonTint">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/search_wrapper</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="closeIcon">@drawable/ic_close_black</item>
+        <item name="defaultQueryHint">@android:string/search_go</item>
+        <item name="queryBackground">@null</item>
+    </style>
+
+    <style name="AppTheme.Contact">
+    </style>
+
+    <style name="AppTheme.Contact.Name">
+        <item name="android:textAppearance">@style/AppTheme.Contact.Name.TextAppearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.Contact.NameWithStatus" parent="AppTheme.Contact.Name">
+        <item name="android:drawableLeft">@drawable/contacts_list_item_status_ic</item>
+        <item name="android:drawablePadding">6dp</item>
+    </style>
+
+    <style name="AppTheme.Contact.Name.TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Contact.Status">
+        <item name="android:textAppearance">@style/AppTheme.Contact.Status.TextAppearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.Contact.Header">
+    </style>
+
+    <style name="AppTheme.Contact.Header.TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.Contact.Header.InvitationsAndRequestsTextAppearance" parent="AppTheme.Contact.Header.TextAppearance">
+        <item name="android:textColor">#afafaf</item>
+    </style>
+
+    <style name="AppTheme.Contact.Status.TextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textColor">#7e7e7e</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Contact.AlphabetIndex">
+    </style>
+
+    <style name="AppTheme.Contact.AlphabetIndex.Item">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/primary_light</item>
+        <item name="android:textAppearance">
+            @style/AppTheme.Contact.AlphabetIndex.Item.TextAppearance
+        </item>
+    </style>
+
+    <style name="AppTheme.Contact.AlphabetIndex.Item.TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <!-- 8sp -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile">
+    </style>
+
+    <style name="AppTheme.Profile.SmallRedTitle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.StatusDevicesTextAppearance">
+        <item name="android:textColor">#aeaeae</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.StatusTextAppearance">
+        <item name="android:textColor">#7e7e7e</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.AccountItem">
+    </style>
+
+    <style name="AppTheme.Profile.AccountItem.TypeTextAppearance">
+        <item name="android:textColor">#adadad</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.AccountItem.NumberTextAppearance">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.DeviceItem">
+    </style>
+
+    <style name="AppTheme.Profile.DeviceItem.TextAppearance">
+        <item name="android:textColor">@color/profile_device_item_name</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.BlockedTextTextAppearance">
+        <item name="android:textColor">#bababa</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.UnblockButtonTextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.Profile.InviteMsgTextAppearance">
+        <item name="android:textColor">#575757</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.ChangeStatus">
+    </style>
+
+    <style name="AppTheme.ChangeStatus.StatusTextAppearance">
+        <item name="android:textColor">#7e7e7e</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="titleTextColor">@color/main_text_color</item>
+        <item name="android:textColorPrimary">@color/main_text_color</item>
+        <item name="android:textColorHint">@color/main_text_color</item>
+        <!--<item name="searchViewStyle">@style/AppTheme.SearchView</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlayWhite" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="titleTextStyle">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="EditProfileExtraContactHint">
+        <item name="android:textColor">#a7a7a7</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="EditProfileName">
+        <item name="android:textColor">#313131</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">#bababa</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/edit_profile_input_bg</item>
+    </style>
+
+    <style name="IncomingCallButton">
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/incoming_call_btn_text</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.TextAppearance.Hint" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textColor">#a6a6a6</item>
+    </style>
+</resources>

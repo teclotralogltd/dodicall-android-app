@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/primary_light"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="RtlHardcoded">
+
+    <ru.swisstok.dodicall.view.RoundedImageView
+        android:id="@+id/contact_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        app:defaultImage="@drawable/no_photo_user"
+        tools:src="@drawable/no_photo_user"/>
+
+    <ImageView
+        android:id="@+id/contact_is_dodicall"
+        android:layout_width="19dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@id/contact_avatar"
+        android:layout_alignRight="@id/contact_avatar"
+        android:src="@drawable/d_medium"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/contact_avatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/AppTheme.Contact.Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Vasya Ivanov"/>
+
+        <TextView
+            android:id="@+id/status_text"
+            style="@style/AppTheme.Contact.Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/contacts_list_item_status_ic"
+            android:drawablePadding="6dp"
+            tools:text="Offline"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

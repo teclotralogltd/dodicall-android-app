@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.swisstok.dodicall.activity.ActiveCallActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/call_screen_bg"
+        android:theme="@style/AppTheme.AppBarOverlayWhite"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:animateLayoutChanges="true"
+        android:background="@color/call_screen_bg">
+
+        <Chronometer
+            android:id="@+id/call_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#c6c6c6"
+            android:textSize="18sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/contact_avatar_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/call_duration">
+
+            <ru.swisstok.dodicall.view.RoundedImageView
+                android:id="@+id/contact_avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:defaultImage="@drawable/no_photo_big"
+                />
+
+            <ImageView
+                android:id="@+id/call_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/contact_avatar"
+                android:layout_marginLeft="-33dp"
+                android:layout_toRightOf="@id/contact_avatar"
+                android:src="@drawable/d_big"
+                />
+
+            <ImageView
+                android:id="@+id/encryption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/contact_avatar"
+                android:layout_marginLeft="-23dp"
+                android:layout_toRightOf="@id/contact_avatar"
+                android:src="@drawable/srtp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+        </RelativeLayout>
+        <!--<TextView
+            android:id="@+id/call_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="18sp"
+            android:textColor="#c6c6c6"
+            android:layout_below="@id/contact_avatar_wrapper"
+            />-->
+        <LinearLayout
+            android:id="@+id/top_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_avatar_wrapper"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/start_video"
+                style="@style/IncomingCallButton"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:drawableTop="@drawable/active_call_start_video_ic"
+                android:text="@string/active_call_video"
+                />
+
+            <Button
+                android:id="@+id/mic"
+                style="@style/IncomingCallButton"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:drawableTop="@drawable/active_call_mic_ic"
+                android:text="@string/active_call_mic"
+                />
+
+            <ru.swisstok.dodicall.view.SelectAudioSrcButton
+                android:id="@+id/audio_src"
+                style="@style/IncomingCallButton"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/active_call_audio_src_ic"
+                android:text="@string/active_call_audio_src"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bottom_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <Button
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:drawableTop="@drawable/incoming_call_decline_ic"
+                    android:text="@string/call_screen_decline"
+                    android:visibility="invisible"
+                    />
+
+                <Button
+                    android:id="@+id/decline"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:drawableTop="@drawable/incoming_call_decline_ic"
+                    android:text="@string/call_screen_decline"
+                    />
+
+                <Button
+                    android:id="@+id/extra"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/active_call_extra_ic"
+                    android:text="@string/active_call_extra"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/extra_buttons_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/awaiting"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="45dp"
+                    android:drawableTop="@drawable/incoming_call_awaiting_ic"
+                    android:text="@string/call_screen_awaiting"
+                    />
+
+                <Button
+                    android:id="@+id/add_to_conversation"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_toLeftOf="@id/awaiting"
+                    android:drawableTop="@drawable/add_to_conversation"
+                    android:text="@string/add_to_conversation"
+                    />
+
+                <Button
+                    android:id="@+id/transfer"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/awaiting"
+                    android:drawableTop="@drawable/transfer"
+                    android:text="@string/active_call_transfer"
+                    />
+
+                <Button
+                    android:id="@+id/open_dialpad"
+                    style="@style/IncomingCallButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add_to_conversation"
+                    android:layout_marginRight="45dp"
+                    android:layout_toLeftOf="@id/awaiting"
+                    android:drawableTop="@drawable/open_dialpad"
+                    android:text="@string/open_dialpad"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

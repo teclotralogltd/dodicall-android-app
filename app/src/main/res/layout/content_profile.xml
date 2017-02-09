@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ru.swisstok.dodicall.activity.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/contact_avatar_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ru.swisstok.dodicall.view.RoundedImageView
+                    android:id="@+id/contact_avatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    app:defaultImage="@drawable/no_photo_big"
+                    />
+
+                <ImageView
+                    android:id="@+id/contact_is_dodicall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/contact_avatar"
+                    android:layout_marginLeft="-33dp"
+                    android:layout_toRightOf="@id/contact_avatar"
+                    android:src="@drawable/d_big"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/profile_invite_msg"/>
+
+            <include layout="@layout/profile_request_sent_msg"/>
+
+            <include layout="@layout/add_to_contact_button"/>
+
+            <include layout="@layout/profile_blocked_wrapper"/>
+
+            <include layout="@layout/divider_horizontal"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_name_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/contact_name"
+                style="@style/AppTheme.Contact.Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="58dp"
+                tools:text="Firstname Lastname"
+                />
+
+            <ImageButton
+                android:id="@+id/external_app_links_toggle_button"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/primary_light_outside"
+                android:src="@drawable/screen_06"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dividerColor"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/external_app_links_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/primary_light"
+                android:drawableLeft="@drawable/dodimail"
+                android:paddingLeft="@dimen/default_padding"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#f2f2f2"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:singleLine="true"
+                android:text="username@dodimail.com"
+                android:textAppearance="@style/AppTheme.Profile.StatusTextAppearance"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width"
+                android:background="@color/dividerColor"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_buttons_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/profile_button_call"
+                    android:layout_width="@dimen/profile_activity_big_button_width"
+                    android:layout_height="@dimen/profile_activity_big_button_height"
+                    android:background="@drawable/primary_light_outside"
+                    app:srcCompat="@drawable/contacts_list_item_call_ic"
+                    />
+
+                <View
+                    android:layout_width="@dimen/divider_width"
+                    android:layout_height="@dimen/profile_activity_big_button_height"
+                    android:background="@color/dividerColor"
+                    />
+
+                <ImageButton
+                    android:id="@+id/profile_button_video_call"
+                    android:layout_width="@dimen/profile_activity_big_button_width"
+                    android:layout_height="@dimen/profile_activity_big_button_height"
+                    android:background="@drawable/primary_light_outside"
+                    app:srcCompat="@drawable/contacts_list_item_video_call_ic"
+                    />
+
+                <View
+                    android:layout_width="@dimen/divider_width"
+                    android:layout_height="@dimen/profile_activity_big_button_height"
+                    android:background="@color/dividerColor"
+                    />
+
+                <ImageButton
+                    android:id="@+id/profile_button_chat"
+                    android:layout_width="@dimen/profile_activity_big_button_width"
+                    android:layout_height="@dimen/profile_activity_big_button_height"
+                    android:background="@drawable/primary_light_outside"
+                    app:srcCompat="@drawable/contacts_list_item_chat_ic"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_block_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/profile_balance_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/balance_wrapper"/>
+
+                <include layout="@layout/divider_horizontal"/>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/nav_status"
+                layout="@layout/status_wrapper"/>
+
+            <include layout="@layout/divider_horizontal"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contact_status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#f2f2f2"
+            android:drawableLeft="@drawable/contacts_list_item_status_ic"
+            android:drawablePadding="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/default_padding"
+            android:paddingRight="@dimen/default_padding"
+            android:singleLine="true"
+            android:text="@string/base_user_status_offline"
+            android:textAppearance="@style/AppTheme.Profile.StatusTextAppearance"
+            />
+
+        <LinearLayout
+            android:id="@+id/profile_accounts_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+        <!-- invisible -->
+        <LinearLayout
+            android:id="@+id/profile_devices_list_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/profile_devices_title"
+                    android:textAppearance="@style/AppTheme.Profile.SmallRedTitle"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:ellipsize="marquee"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="@string/profile_last_seen_online_title"
+                    android:textAppearance="@style/AppTheme.Profile.StatusDevicesTextAppearance"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width"
+                android:background="@color/dividerColor"
+                />
+
+            <LinearLayout
+                android:id="@+id/profile_devices_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_extra_contacts_list_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:text="@string/profile_extra_contacts_title"
+                android:textAppearance="@style/AppTheme.Profile.SmallRedTitle"
+                />
+
+            <include layout="@layout/divider_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/profile_extra_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/empty"
+        tools:visibility="gone"
+        />
+
+    <include
+        layout="@layout/progress"
+        tools:visibility="gone"
+        />
+</RelativeLayout>

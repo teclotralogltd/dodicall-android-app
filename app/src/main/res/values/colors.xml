@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F6F6F6</color>
+    <color name="colorPrimaryDark">#242424</color>
+    <color name="colorAccent">#e6001e</color>
+    <color name="colorAccentPressed">#bd0013</color>
+    <color name="listItemPressed">@android:color/transparent</color>
+    <color name="tabTitleDefault">#6a6a6a</color>
+    <color name="tabTitleSelected">#fff</color>
+    <color name="loginInputDefaultBg">#e1e1e1</color>
+    <color name="primaryHighlight">#f1f1f1</color>
+    <color name="darkHighlight">#3d3d3d</color>
+    <color name="dividerColor">#e1e1e1</color>
+    <color name="dodimail">#c7127b</color>
+    <color name="preference_fallback_accent_color">@color/colorAccent</color>
+    <color name="chat_new_messages_counter_bg">#E6061C</color>
+    <color name="chat_new_messages_counter_text">#ffffff</color>
+    <color name="read_message_text">@android:color/black</color>
+    <color name="unread_message_text">@android:color/darker_gray</color>
+    <color name="call_screen_bg">#372f2f</color>
+    <color name="call_history_missed">#e60010</color>
+    <color name="call_history_read">#000000</color>
+    <color name="call_history_count_text">#ababab</color>
+    <color name="black">#000000</color>
+
+    <color name="main_text_color">#454545</color>
+
+    <color name="main_green">#5ba167</color>
+    <color name="main_yellow">#fb9f31</color>
+    <color name="main_gray">#afafb0</color>
+
+    <color name="tab_selected">#454545</color>
+    <color name="tab_unselected">#cecece</color>
+    <color name="fab_normal">#2FA364</color>
+    <color name="fab_pressed">#CECECE</color>
+</resources>

@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_sender_id" translatable="false">INSERT YOUR KEY FOR GCM</string>
+
+    <string name="app_name">dodicall</string>
+
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+
+    <!--Content Descriptions -->
+    <string name="content_description_add_number" translatable="false">Добавить номер</string>
+    <string name="content_description_erase_number" translatable="false">Удалить символ или полностью номер</string>
+    <string name="content_description_call" translatable="false">Позвонить</string>
+    <string name="content_description_avatar" translatable="false">Аватар</string>
+    <string name="content_description_is_dodicall_contact" translatable="false">Контакт из додиколл</string>
+
+    <!-- actionbar menu -->
+    <!-- contacts -->
+    <string name="action_search">Поиск в моих контактах</string>
+    <string name="action_invitations">Запросы и приглашения</string>
+    <string name="action_user_search">Поиск новых контактов</string>
+    <string name="contacts_filter_all">Все контакты</string>
+    <string name="contacts_filter_dodicall">dodicall</string>
+    <string name="contacts_filter_groups">Группы контактов</string>
+    <string name="contacts_filter_locked">Заблокированные</string>
+    <string name="new_requests_zero">Новые приглашения</string>
+    <string name="new_requests_count">Новые приглашения (%d)</string>
+    <string name="contact_waiting_for_acceptance">В ожидании подтверждения</string>
+    <string name="contact_request_sent">Запрос отправлен</string>
+    <string name="contact_was_added">Пользователь добавлен в список контактов</string>
+    <!-- history -->
+    <string name="action_history_filter">Фильтр</string>
+    <string name="action_history_edit">Редактировать</string>
+    <!-- chats -->
+    <string name="action_create_new_chat">Создать новый чат</string>
+    <string name="action_delete_chats">Удалить чаты</string>
+    <string name="action_chat_search">Поиск в чатах</string>
+
+    <!-- account -->
+    <string name="title_activity_login">Login</string>
+    <string name="CONTENT_AUTHORITY" translatable="false">ru.swisstok.provider</string>
+    <string name="ACCOUNT_TYPE" translatable="false">ru.swisstok.account</string>
+    <!-- login screen -->
+    <string name="login_hint">логин</string>
+    <string name="password_hint">пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="login_button_test">Войти (test)</string>
+    <string name="login_failure">логин или пароль введены неверно</string>
+    <string name="app_version_number">Версия %1$s (%2$s) %3$s</string>
+    <string name="password_restore">Забыли пароль?</string>
+    <string name="registration">Зарегистрироваться</string>
+
+    <!-- nav_drawer menu -->
+    <string name="nav_drawer_menu_balance">Баланс</string>
+    <string name="nav_drawer_menu_change_status">Статус</string>
+    <!-- tabs -->
+    <string name="tab_title_contacts">Контакты</string>
+    <string name="tab_title_history">История</string>
+    <string name="tab_title_chats">Чаты</string>
+    <string name="tab_title_dialpad">Позвонить</string>
+
+    <string name="title_activity_call_history_detail">Вызовы</string>
+
+    <!-- preferences headers -->
+    <string name="pref_header_profile">Профиль</string>
+    <string name="pref_header_interface">Интерфейс</string>
+    <string name="pref_header_telephony">Телефония</string>
+    <string name="pref_header_encryption">Шифрование</string>
+    <string name="pref_header_chats">Чаты</string>
+    <string name="pref_header_video">Видео</string>
+    <string name="pref_header_audio">Аудио</string>
+    <string name="pref_header_common">Общие</string>
+    <string name="pref_header_info">Информация</string>
+    <string name="pref_header_debug">Отладка</string>
+
+    <!-- common -->
+    <string name="pref_common_white_list_title">Белый список</string>
+    <string name="pref_white_list_warning_message">Вы будете получать входящие звонки только от пользователей из белого списка. Включить режим \"белый список\"?</string>
+    <string name="pref_white_list_empty_message">Для включения настройки необходимо добавить контакты в белый список</string>
+    <!-- interface preferences -->
+    <!-- style -->
+    <string name="pref_interface_style_title">Стиль</string>
+    <string name="pref_interface_style_default">Стандартный</string>
+    <string name="pref_interface_style_light">Светлый</string>
+    <string name="pref_interface_style_dark">Темный</string>
+    <string name="pref_interface_style_default_value" translatable="false">pref_style_default</string>
+    <string name="pref_interface_style_light_value" translatable="false">pref_style_light</string>
+    <string name="pref_interface_style_dark_value" translatable="false">pref_style_dark</string>
+    <!-- language -->
+    <string name="pref_interface_language_title">Язык интерфейса</string>
+    <string name="pref_interface_language_ru">RU</string>
+    <string name="pref_interface_language_en">EN</string>
+    <string name="pref_interface_language_tr">TR</string>
+    <string name="pref_interface_language_de">DE</string>
+    <string name="pref_interface_language_ru_value" translatable="false">ru</string>
+    <string name="pref_interface_language_en_value" translatable="false">en</string>
+    <string name="pref_interface_language_tr_value" translatable="false">tr</string>
+    <string name="pref_interface_language_de_value" translatable="false">de</string>
+    <!-- animation -->
+    <string name="pref_interface_animation_title">Анимация</string>
+    <!-- chats preferences -->
+    <string name="pref_chats_font_size_title">Размер шрифта</string>
+    <string name="pref_chats_clear_title">Очистить чаты</string>
+    <string name="pref_chats_security_title">Безопасность</string>
+    <!-- chat's security preferences -->
+    <string name="pref_chats_import_key_title">Экспортировать ключ шифрования</string>
+    <string name="pref_chats_export_key_title">Импортировать ключ шифрования</string>
+    <string name="pref_chats_remove_key_title">Удалить ключ шифрования</string>
+    <string name="password_title">Введите пароль</string>
+    <string name="password_empty_error">Пароль не может быть пустым</string>
+    <string name="password_wrong_error">Пароль введен неверно</string>
+    <string name="user_key_removed_message">Ключ шифрования удален</string>
+    <!-- accounts -->
+    <string name="pref_telephony_accounts">Учетные записи</string>
+    <!-- encryption -->
+    <string name="pref_telephony_encryption_type_title">Шифрование</string>
+    <string name="pref_telephony_encryption_type_none">Без шифрования</string>
+    <string name="pref_telephony_encryption_type_srtp">SRTP</string>
+    <string name="pref_telephony_encryption_type_none_value" translatable="false">VoipEncryptionNone</string>
+    <string name="pref_telephony_encryption_type_srtp_value" translatable="false">VoipEncryptionSrtp</string>
+    <!-- profile preferences -->
+    <string name="pref_profile_balance_title">Баланс</string>
+    <string name="pref_profile_balance_summary_default">0</string>
+    <string name="pref_profile_profile_title">Мой профиль</string>
+    <!-- video -->
+    <string name="pref_telephony_video_enabled_title">Разрешить видео</string>
+    <string name="pref_telephony_video_resolution_wifi_title">Размер видео (Wi-Fi)</string>
+    <string name="pref_telephony_video_resolution_cell_title">Размер видео (Cell)</string>
+    <string name="pref_telephony_video_resolution_qvga">QVGA</string>
+    <string name="pref_telephony_video_resolution_vga">VGA</string>
+    <string name="pref_telephony_video_resolution_720p">720p</string>
+    <string name="pref_telephony_video_resolution_qvga_value" translatable="false">VideoSizeQvga</string>
+    <string name="pref_telephony_video_resolution_vga_value" translatable="false">VideoSizeVga</string>
+    <string name="pref_telephony_video_resolution_720p_value" translatable="false">VideoSize720p</string>
+    <string name="pref_telephony_noise_suppression_title">Эхо- и шумоподавление</string>
+    <string name="pref_telephony_noise_suppression_none">Выключено</string>
+    <string name="pref_telephony_noise_suppression_soft">Умеренное</string>
+    <string name="pref_telephony_noise_suppression_aggressive">Усиленное</string>
+    <string name="pref_telephony_noise_suppression_none_value" translatable="false">EchoCancellationModeOff</string>
+    <string name="pref_telephony_noise_suppression_soft_value" translatable="false">EchoCancellationModeSoft</string>
+    <string name="pref_telephony_noise_suppression_aggressive_value" translatable="false">EchoCancellationModeHard</string>
+    <!-- info preferences -->
+    <string name="pref_info_about_title">О программе</string>
+    <string name="pref_info_what_new_title">Что нового</string>
+    <string name="pref_info_known_bugs_title">Известные проблемы</string>
+    <string name="pref_info_help_title">Помощь</string>
+    <string name="pref_info_about_url">http://files.swisstok.ru/info/dmc_about_ru.html</string>
+    <!-- debug -->
+    <string name="pref_debug_mode_title">Режим отладки</string>
+    <string name="pref_debug_mode_on_warning">Режим отладки увеличивает объем данных приложения и использует персональные данные</string>
+    <string name="turn_on">Включить</string>
+    <string name="turn_off">Выключить</string>
+    <string name="pref_debug_codecs_title">Кодеки</string>
+    <string name="pref_debug_calls_log_title">Лог звонков</string>
+    <string name="pref_debug_calls_history_title">История звонков</string>
+    <string name="pref_debug_calls_quality_log_title">Лог качества звонков</string>
+    <string name="pref_debug_calls_chat_log_title">Лог чата</string>
+    <string name="pref_debug_db_log_title">Лог БД</string>
+    <string name="pref_debug_queries_log_title">Лог запросов</string>
+    <string name="pref_debug_send_bug_title">Отправить ошибку</string>
+    <!-- codecs -->
+    <string name="pref_debug_codecs_audio_title">Аудио кодеки %s</string>
+    <string name="pref_debug_codecs_video_title">Видео кодеки %s</string>
+    <string name="pref_debug_codecs_wifi_title">(Wi-Fi)</string>
+    <string name="pref_debug_codecs_cell_title">(Cell)</string>
+    <!-- profile -->
+    <string name="title_activity_profile">Профиль</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="pref_debug_send_report_subject">Тема</string>
+    <string name="pref_debug_send_report_message">Описание</string>
+    <string name="pref_debug_send_report_calls_log">Лог звонков</string>
+    <string name="pref_debug_send_report_calls_history_log">Лог истории звонков</string>
+    <string name="pref_debug_send_report_calls_quality_log">Лог качества звонков</string>
+    <string name="pref_debug_send_report_chats_log">Лог чата</string>
+    <string name="pref_debug_send_report_db_log">Лог БД</string>
+    <string name="pref_debug_send_report_queries_log">Лог запросов</string>
+    <string name="pref_debug_send_report_trace_log">Лог отладки</string>
+    <string name="send_report">Отправить</string>
+    <string name="pref_info_what_new_url">http://files.swisstok.ru/info/dmc_whatsnew-android_ru.html</string>
+    <string name="pref_info_known_issues_url">http://files.swisstok.ru/info/dmc_knownbugs-android_ru.html</string>
+    <string name="pref_info_help_url"><![CDATA[https://docs.google.com/gview?embedded=true&url=http://files.swisstok.ru/info/dodicall_userguide_ru.pdf]]></string>
+    <string name="list_default_empty">Нет данных</string>
+    <string name="login_progress_dialog_text">Вход…</string>
+    <string name="login_error">Сервер недоступен</string>
+    <string name="login_no_network">Отсутствует подключение к сети</string>
+    <string name="empty_or_unknown_log">Лог пуст</string>
+    <string name="clipboard_msg">Текст скопирован в буфер обмена</string>
+    <string name="pref_telephony_account_default_title">По умолчанию</string>
+    <string name="pref_debug_send_progress_msg">Отправка ошибки…</string>
+    <string name="pref_debug_send_report_success_send_msg">Ошибка #%1$d успешно отправлена</string>
+    <string name="pref_debug_send_report_fail_send_msg">Ошибка отправки</string>
+    <string name="profile_devices_title">Устройства</string>
+    <string name="profile_extra_contacts_title">Дополнительные контакты</string>
+    <string name="action_profile_edit">Редактировать</string>
+    <string name="action_profile_add_to_group">Добавить в группу</string>
+    <string name="action_profile_block">Заблокировать</string>
+    <string name="action_profile_delete">Удалить</string>
+    <string name="profile_last_seen_offline_title">заходил (-а) %1$s в %2$s</string>
+    <string name="profile_last_seen_online_title">в сети</string>
+    <string name="profile_device_item_state_off">выкл.</string>
+    <string name="profile_device_item_state_on">вкл.</string>
+    <string name="contacts_filter_phone">Телефонные</string>
+    <string name="contacts_filter_saved">Сохраненные</string>
+    <string name="block_user_confirm">Вы действительно хотите заблокировать этого пользователя?</string>
+    <string name="delete_user_confirm">Вы действительно хотите удалить этого пользователя?</string>
+    <string name="base_user_status_offline">Не в сети</string>
+    <string name="base_user_status_online">В сети</string>
+    <string name="base_user_status_hidden">Невидимый</string>
+    <string name="base_user_status_away">Нет на месте</string>
+    <string name="base_user_status_dnd">Не беспокоить</string>
+    <string name="change_status_done_button">Готово</string>
+    <string name="title_activity_change_status">Изменить статус</string>
+    <string name="extra_status_hint">Дополнительный статус</string>
+    <string name="user_blocked_status">Заблокирован</string>
+    <string name="profile_blocked_title">Пользователь заблокирован</string>
+    <string name="profile_unblock_button_text">Разблокировать</string>
+    <string name="contact_unblocked_msg">Контакт разблокирован</string>
+    <string name="contact_blocked_msg">Контакт заблокирован</string>
+    <string name="contacts_filter_white">Белые</string>
+    <string name="profile_delete_progress_msg">Удаление…</string>
+    <string name="profile_set_favorite_progress_msg">Обновление…</string>
+    <string name="profile_block_progress_msg">Блокировка…</string>
+    <string name="default_progress_dialog_msg">Загрузка…</string>
+    <string name="pref_debug_clear_logs_title">Очистить логи</string>
+    <string name="pref_debug_clear_logs_done_msg">Очистка логов завершена</string>
+    <string name="title_activity_my_profile">Мой профиль</string>
+    <string name="alphabet">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+    <string name="profile_extra_contact_type_mobile">мобильный</string>
+    <string name="contact_save_confirm_msg">Контакт будет скопирован и сохранен в разделе \"сохраненные\"</string>
+    <string name="contact_save_failed_msg">Ошибка сохранения</string>
+    <string name="invite_header_title">Приглашения</string>
+    <string name="request_header_title">Запросы</string>
+    <string name="unknown_header_title" translatable="false">unknown</string>
+    <string name="profile_request_sent_msg">Ваш запрос отправлен</string>
+    <string name="profile_invite_msg">Пользователь хочет добавить вас в контакты</string>
+    <string name="profile_invite_accept_button_text">Добавить</string>
+    <string name="profile_invite_decline_button_text">Отклонить</string>
+    <string name="pref_common_white_list_default_summary">0 контактов</string>
+    <string name="pref_debug_kill_jni_title" translatable="false">kill jni</string>
+    <string name="pref_debug_kill_java_title" translatable="false">kill java</string>
+    <string name="url_balance" translatable="false">https://admin:swisstok@sso.dodidone.pro/login</string>
+    <string name="pref_debug_trace_log_title">Лог отладки</string>
+    <string name="pref_debug_application_log_title">Лог программы</string>
+    <string name="send_report_confirm_no_msg_no_sbj">Поля \"Тема\" и \"Описание\" не заполнены. Отправить сообщение об ошибке?</string>
+    <string name="send_report_confirm_no_sbj">Поле \"Тема\" не заполнено. Отправить сообщение об ошибке?</string>
+    <string name="send_report_confirm_no_msg">Поле \"Описание\" не заполнено. Отправить сообщение об ошибке?</string>
+    <string name="registration_url_test" translatable="false">https://sso.test.swisstok.ru/authorization/registration/index</string>
+    <string name="restore_password_url_test" translatable="false">https://sso.test.swisstok.ru/authorization/default/restore</string>
+    <string name="balance_url_test">https://my.test.swisstok.ru/Finances/payment/payment</string>
+    <string name="balance_url_industrial">https://sso.dodidone.pro/login</string>
+    <string name="action_profile_add_to_white">Добавить в белые</string>
+    <string name="profile_add_to_white_progress_msg">Добавление в белый список…</string>
+    <string name="contact_added_to_white_list_msg">Контакт добавлен в белый список</string>
+    <string name="action_profile_remove_from_white">Убрать из белых</string>
+    <string name="profile_remove_from_white_progress_msg">Удаление из белого списка…</string>
+    <string name="contact_removed_from_white_list_msg">Контакт удален из белого списка</string>
+    <string name="action_create_contact">Создать контакт</string>
+    <string name="edit_profile_cancel">Отмена</string>
+    <string name="edit_profile_save">Сохранить</string>
+    <string name="menu_item_chat_settings">Настройки чата</string>
+    <string name="menu_item_add_user">Добавить пользователя</string>
+    <string name="menu_item_remove_user">Удалить пользователя</string>
+    <string name="menu_item_remove_messages">Удалить сообщения</string>
+    <string name="profile_edit_firstname_hint">Имя</string>
+    <string name="profile_edit_lastname_hint">Фамилия</string>
+    <string name="edit_profile_extra_contact_hint">Телефон</string>
+    <string name="save_contact_progress_msg">Сохранение…</string>
+    <string name="read_contacts_explanation">Для синхронизации ваших контактов с dodicall откройте к ним доступ </string>
+    <string name="save_to_ddc_confirm_msg">Контакт будет сохранен в разделе \"dodicall\"</string>
+    <string name="save_to_ddc_success_msg">Контакт успешно сохранен</string>
+    <string name="profile_invite_button_text">Добавить в контакты</string>
+    <string name="title_activity_choose_contacts">Выберите контакты</string>
+    <string name="menu_item_done">Готово</string>
+    <string name="progress_message_rename_chat">Переименование чата…</string>
+    <string name="progress_message_delete_chats">Удалениe…</string>
+    <string name="progress_message_creating_chat">Создание чата…</string>
+    <string name="last_message_removed"><![CDATA[Пользователь <b>%s</b> удалил сообщение]]></string>
+    <string name="last_message_contact"><![CDATA[Пользователь <b>%s</b> отправил контакт]]></string>
+    <string name="last_message_quoted"><![CDATA[Пользователь <b>%s</b> процитировал сообщения]]></string>
+    <string name="cannot_rename_chat">Невозможно переименовать чат</string>
+    <string name="action_start_chat">Перейти в чат</string>
+    <string name="chat_subject">Тема чата</string>
+    <string name="rename">Переименовать</string>
+    <string name="chat_has_rename">Чат был переименован в %1$s</string>
+    <string name="chat_name">Название</string>
+    <string name="title_activity_chat_settings">Настройки чата</string>
+    <string name="attach_content_to_chat_title">Прикрепить</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="select_from_gallery">Фото из галереи</string>
+    <string name="send_contact">Отправить контакт</string>
+    <string name="enter_message">Введите сообщение</string>
+    <string name="dodicall_search_title">Поиск в dodicall</string>
+    <string name="notification_message_create">cоздал(a) новый чат</string>
+    <string name="notification_message_invite_full">%s пригласил вас в чат</string>
+    <string name="notification_message_invite">пригласил(а)</string>
+    <string name="notification_message_revoke">удалил(а)</string>
+    <string name="notification_message_leave">покинул(а) чат</string>
+    <string name="notification_message_remove">удалил(а) чат</string>
+    <string name="call_screen_answer_msg">Сообщение</string>
+    <string name="call_screen_awaiting">Удержание</string>
+    <string name="call_screen_decline">Отклонить</string>
+    <string name="call_screen_accept">Ответить</string>
+    <string name="call_type_incoming">Входящий вызов</string>
+    <string name="incoming_screen_default_name">Неизвестный номер</string>
+    <string name="default_time" translatable="false">00:00</string>
+    <string name="active_call_video">Видео</string>
+    <string name="active_call_mic">Микрофон</string>
+    <string name="active_call_audio_src">Источник звука</string>
+    <string name="active_call_go_to_chat">Перейти в чат</string>
+    <string name="active_call_extra">Еще</string>
+    <string name="add_to_conversation">Добавить</string>
+    <string name="active_call_transfer">Перевод вызова</string>
+    <string name="chat_date_today">сегодня</string>
+    <string name="chat_date_yesterday">вчера</string>
+    <string name="chat_date_separator_today">Сегодня</string>
+    <string name="chat_date_separator_yesterday">Вчера</string>
+    <string name="alert_dialog_message_delete_chats_confirm">Вы уверены, что хотите удалить выбранные чаты из списка чатов? Вы больше не сможете просмотреть сообщения.</string>
+    <string name="alert_dialog_message_delete_messages_confirm">Вы уверены, что хотите удалить выбранные сообщения? Воcстановить эти сообщения будет невозможно.</string>
+    <string name="action_remove_user">Удалить пользователей</string>
+    <string name="action_remove_messages">Удалить сообщения</string>
+    <string name="select_all">Выбрать все</string>
+    <string name="deselect_all">Снять выделение</string>
+    <string name="yes_delete_chats">Да, удалить</string>
+    <string name="toolbar_selected_chats_count">Выбрано: %1$d</string>
+    <string name="chat_message_actions_title">Сообщения</string>
+    <string name="chat_message_action_answer">Ответить</string>
+    <string name="chat_message_action_select">Выбрать</string>
+    <string name="chat_message_action_remove">Удалить</string>
+    <string name="chat_message_action_edit">Исправить</string>
+    <string name="chat_message_action_info">Информация о сообщении</string>
+    <string name="chat_message_copied_to_clipboard">Сообщение скопировано в буфер обмена</string>
+    <string name="chat_message_status_removed">Сообщение удалено</string>
+    <string name="permissions_explanation">Для синхронизации ваших контактов с dodicall откройте к ним доступ \n Для совершения голосовых звонков разрешите аудиозапись</string>
+    <string name="close_explanation">Приложение не получило необходимых разрешений и будет закрыто</string>
+    <string name="external_storage_permissions_explanation">Для сохранения ключа в файл разрешите доступ к файловой системе</string>
+    <string name="external_storage_close_explanation">Экспорт в файл невозможен: приложение не получило необходимых разрешений</string>
+    <string name="unable_create_chat">Не удалось создать чат</string>
+    <string name="outgoing_call">Исходящий вызов</string>
+    <string name="unable_start_call">Невозможно начать вызов</string>
+    <string name="contact_has_no_number">Контакт не имеет номерa</string>
+    <string name="conference">Конференция</string>
+    <string name="tariff">Тариф</string>
+    <string name="unknown_number">Неизвестный номер</string>
+    <string name="voice_call">Голосовой вызов</string>
+    <string name="video_call">Видео вызов</string>
+    <string name="chat_is_not_active">Чат закрыт</string>
+    <string name="user">Пользователь</string>
+    <string name="chat_unread_messages">Непрочитанные сообщения</string>
+    <string name="audio_src_headset">Наушники</string>
+    <string name="audio_src_phone">Телефон</string>
+    <string name="audio_src_speaker">Динамик</string>
+    <string name="notification_incoming_call">Входящий вызов dodicall</string>
+    <string name="notification_active_call">Текущий вызов dodicall</string>
+    <string name="notification_outgoing_call">Исходящий вызов dodicall</string>
+    <string name="notification_decline_call">Отклонить</string>
+    <string name="notification_answer_call">Ответить</string>
+    <string name="notification_new_call">ПОЗВОНИТЬ</string>
+    <string name="notification_end_call">Завершить</string>
+    <string name="available_areas_loading_msg">Загрузка доступных площадок…</string>
+    <string name="available_areas_dialog_title">Выбор площадки</string>
+    <string name="notification_write_message">НАПИСАТЬ</string>
+    <string name="notification_reply_message">ОТВЕТИТЬ</string>
+    <string name="notification_message_subject">переименовал чат в</string>
+    <string name="chat_message_status_sent">Отправлено</string>
+    <string name="chat_message_status_delivered">Дост. до сервера</string>
+    <string name="menu_item_manage_users">Участники чата</string>
+    <string name="action_add_users_chat">Добавить пользователей</string>
+    <string name="toolbar_selected_contacts_count">Удалить из чата: %1$d</string>
+    <string name="alert_title_delete_contacts">Удалить участников чата</string>
+    <string name="alert_dialog_message_delete_contacts_confirm">Вы уверены, что хотите удалить выбранных участников из чата</string>
+    <string name="progress_message_update_members_chat">Обновление участников</string>
+    <string name="open_dialpad">Клавиатура</string>
+    <string name="hide_dialpad">Скрыть клавиатуру</string>
+    <string name="history_status_outgoing_success">исходящий</string>
+    <string name="history_status_missed">пропущенный</string>
+    <string name="history_status_aborted">несостоявшийся</string>
+    <string name="history_status_declined">отклоненный</string>
+    <string name="history_status_incoming_success">входящий</string>
+    <string name="history_status_detail_outgoing_success">Исходящий</string>
+    <string name="history_status_detail_missed">Пропущенный</string>
+    <string name="history_status_detail_aborted">Несостоявшийся</string>
+    <string name="history_status_detail_declined">Отклоненный</string>
+    <string name="history_status_detail_incoming_success">Входящий</string>
+    <string name="duration_sec">сек.</string>
+    <string name="duration_min">мин.</string>
+    <string name="duration_hour">час.</string>
+    <string name="select_number_dialog_title">Выберите номер</string>
+    <string name="notification_open">ОТКРЫТЬ</string>
+    <string name="alert_dialog_message_logout">Вы уверены, что хотите выйти?</string>
+    <string name="missed_call">Пропущенный вызов dodicall</string>
+    <string name="chat_message_text">%1$s: %2$s</string>
+    <string name="toast_unable_create_chat">Невозможно создать диалог</string>
+    <string name="notification_missed_call_from">Пропущенный вызов от %1$s</string>
+    <string name="new_invitation">Новое приглашение от пользователя</string>
+    <string name="notification_decline_invitation">ОТКЛОНИТЬ</string>
+    <string name="notification_accept_invitation">ПРИНЯТЬ</string>
+    <string name="notification_invitation_you">Пользователь %1$s пригласил вас</string>
+    <string name="notification_messages_in_chats">%1$s в %2$s</string>
+    <string name="action_set_all_read">Отметить как прочитанные</string>
+    <string name="new_contact">Создать новый контакт</string>
+    <string name="add_to_exist_contact">Добавить номер к имеющемуся</string>
+    <string name="chat_no_members">Нет участников</string>
+    <string name="title_activity_choose_contact">Выберите контакт</string>
+    <string name="title_activity_logout">Выйти из приложения</string>
+    <string name="notification_missed_calls_count">Пропущенных вызовов: %1$d</string>
+    <string name="chat_message_encrypted">Зашифрованное сообщение</string>
+    <string name="action_forward">Переслать</string>
+    <string name="action_copy">Скопировать</string>
+    <string name="action_quote">Цитировать</string>
+    <string name="chat_messages_copied_to_clipboard">Сообщения скопированы в буфер обмена</string>
+    <string name="chat_messages_quoted">Цитируемые сообщения</string>
+    <string name="chat_messages_forward">Пересылаемые сообщения</string>
+    <string name="chat_messages_quote_forward_count">Сообщений: %d</string>
+    <string name="dodicall_search_hint">Найти пользователя</string>
+    <string name="fab_new_contact">Создать контакт</string>
+    <string name="fab_dodicall_search_title">Найти контакт в dodicall</string>
+    <string name="title_activity_create_contact">Создать контакт</string>
+    <string name="error_first_name_empty">Имя не может быть пустым</string>
+    <string name="error_last_name_empty">Фамилия не может быть пустым</string>
+    <string name="active_call_is_present_error">В данный момент разговор по второй линии не поддерживается. Звершите текущий разговор и повторите попытку.</string>
+    <string name="title_activity_edit_profile">Редактировать контакт</string>
+
+    <string name="action_add_user_to_conference">Добавить</string>
+    <string name="title_activity_forward_messages">Переслать сообщение</string>
+
+    <!--Key Export-->
+    <string name="key_export_title">Ваш персональный ключ\nшифрования сгенерирован</string>
+    <string name="key_export_message">Сохраните ключ в безопасное место\nдля восстановления данных в случае\nсмены устройства</string>
+    <string name="copy_key">Скопировать</string>
+    <string name="download_key">Сохранить</string>
+    <string name="share_key">Открыть в</string>
+    <string name="continue_without_key_saving">ПРОДОЛЖИТЬ</string>
+    <string name="key_was_exported">Ваш ключ сохранен в Загрузки</string>
+
+    <!--Key Import-->
+    <string name="key_import_title">Для доступа к своим чатам\nвведите ранее созданный\nключ шифрования</string>
+    <string name="key_import_message">Для переноса ключа с помощью\nQR-кода Вам потребуется Ваше старое\nустройство. Для переноса ключа через\nкопирование скопируйте ранее\nсохраненный ключ</string>
+    <string name="import_key_from_clipboard">Скопировать ключ</string>
+    <string name="import_key_from_qr">Сканировать QR-код</string>
+    <string name="import_key_from_clipboard_title">Импортировать ключ</string>
+    <string name="import_key_from_clipboard_hint">Вставьте скопированный ключ шифрования из буфера обмена</string>
+    <string name="import_key_from_clipboard_length_error">Минимально допустимая длина ключа = 2048 символов</string>
+</resources>

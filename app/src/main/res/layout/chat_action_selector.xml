@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center_vertical"
+        android:text="@string/attach_content_to_chat_title"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/take_photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/ic_photo_camera_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/ic_photo_camera_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/take_photo"
+        android:textSize="@dimen/default_text_size"/>
+
+    <TextView
+        android:id="@+id/select_from_gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/ic_photo_library_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/ic_photo_library_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/select_from_gallery"
+        android:textSize="@dimen/default_text_size"/>
+
+    <TextView
+        android:id="@+id/send_contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:drawableLeft="@drawable/ic_account_box_wrapper"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableStart="@drawable/ic_account_box_wrapper"
+        android:gravity="center_vertical"
+        android:text="@string/send_contact"
+        android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:dividerHeight="@dimen/divider_width"/>
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="match_parent"
+            android:background="@color/dividerColor"/>
+
+        <ru.swisstok.dodicall.view.AlphabetContactsView
+            android:id="@+id/contacts_alphabet_indexer"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:divider="@color/dividerColor"
+            android:dividerHeight="@dimen/divider_width"
+            android:textColor="@color/tab_unselected"
+            android:textSize="12sp"
+            app:dotRadius="2dp"/>
+    </LinearLayout>
+
+    <include layout="@layout/empty"/>
+
+    <include layout="@layout/progress"/>
+
+    <LinearLayout
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#dfffffff"
+        android:clickable="true"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingRight="28dp"
+        android:visibility="invisible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-46dp"
+            android:background="#00ff00ff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fab_dodicall_search_title"
+                android:textColor="#454545"
+                android:textSize="16sp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/search_contact_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#F6F6F6"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_search_new_01"
+                app:useCompatPadding="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_contact_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffff00"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fab_new_contact"
+                android:textColor="#454545"
+                android:textSize="16sp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/new_contact_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#F6F6F6"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_create_new_01"
+                app:useCompatPadding="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@drawable/fab_selector"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_white_24px"
+        app:useCompatPadding="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_to_contact_wrapper"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingTop="16dp"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingBottom="18dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/add_to_contact_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rounded_button_height"
+        android:layout_weight="1"
+        android:textAppearance="@style/AppTheme.Profile.UnblockButtonTextAppearance"
+        android:text="@string/profile_invite_button_text"
+        android:background="@drawable/rounded_red_button_left_bg"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/rounded_button_height"
+        android:background="@android:color/white"
+        />
+    <ImageButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/add_to_contact_msg_btn"
+        android:layout_width="73dp"
+        android:layout_height="@dimen/rounded_button_height"
+        android:background="@drawable/rounded_red_button_right_bg"
+        android:src="@drawable/invite_msg_ic"
+        />
+</LinearLayout>

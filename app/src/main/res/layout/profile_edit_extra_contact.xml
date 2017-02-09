@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:layout_marginRight="50dp">
+        <TextView
+            style="@style/EditProfileExtraContactHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_extra_contact_hint"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:digits="0123456789+ "
+                android:imeOptions="actionDone"
+                android:background="@drawable/edit_profile_input_bg"
+                android:maxLength="@integer/max_phone_length"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/primary_light_outside"
+        android:src="@drawable/delete_extra_contact"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividerColor"
+        />
+</RelativeLayout>

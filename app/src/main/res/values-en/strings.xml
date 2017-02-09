@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dodicall</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- actionbar menu -->
+    <!-- contacts -->
+    <string name="action_search">Search in my contacts</string>
+    <string name="action_invitations">Invites &amp; requests</string>
+    <string name="action_user_search">Find new contacts</string>
+    <string name="contacts_filter_all">All contacts</string>
+    <string name="contacts_filter_dodicall">dodicall</string>
+    <string name="contacts_filter_groups">Contacts groups</string>
+    <string name="new_requests_zero">New invitations</string>
+    <string name="new_requests_count">New invitations (%d)</string>
+    <string name="contact_waiting_for_acceptance">Pending approval</string>
+    <string name="contact_request_sent">Request has been sent</string>
+    <string name="contacts_filter_locked">Blocked</string>
+    <string name="action_history_filter">Filter</string>
+    <string name="action_history_edit">Edit</string>
+    <string name="contact_was_added">User was added to Contacts list</string>
+    <!-- chats -->
+    <string name="action_create_new_chat">Create new chat</string>
+    <string name="action_delete_chats">Delete chats</string>
+    <string name="action_chat_search">Search in chats</string>
+
+    <!-- account -->
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_call_history_detail">Calls</string>
+
+    <!-- login screen -->
+    <string name="login_hint">login</string>
+    <string name="password_hint">password</string>
+    <string name="login_button">Login</string>
+    <string name="login_failure">wrong login or password</string>
+    <string name="app_version_number">Version %1$s (%2$s) %3$s</string>
+    <string name="password_restore">Lost password?</string>
+    <string name="registration">Registration</string>
+
+    <!-- nav_drawer menu -->
+    <string name="nav_drawer_menu_balance">Balance</string>
+    <string name="nav_drawer_menu_change_status">Status</string>
+    <!-- tabs -->
+    <string name="tab_title_contacts">Contacts</string>
+    <string name="tab_title_history">History</string>
+    <string name="tab_title_chats">Chats</string>
+    <string name="tab_title_dialpad">Call</string>
+
+    <!-- preferences headers -->
+    <string name="pref_header_profile">Profile</string>
+    <string name="pref_header_interface">Interface</string>
+    <string name="pref_header_telephony">Telephony</string>
+    <string name="pref_header_encryption">Encryption</string>
+    <string name="pref_header_chats">Chats</string>
+    <string name="pref_header_video">Video</string>
+    <string name="pref_header_audio">Audio</string>
+    <string name="pref_header_common">Common</string>
+    <string name="pref_header_info">Information</string>
+    <string name="pref_header_debug">Debug</string>
+
+    <!-- common -->
+    <string name="pref_common_white_list_title">White list</string>
+    <string name="pref_white_list_warning_message">You will receive incoming calls from whitelist contacts only. Turn on \"white list\"?</string>
+    <string name="pref_white_list_empty_message">To turn on setting you should have at least one contact in white list</string>
+    <!-- interface preferences -->
+    <!-- style -->
+    <string name="pref_interface_style_title">Style</string>
+    <string name="pref_interface_style_default">Default</string>
+    <string name="pref_interface_style_light">Light</string>
+    <string name="pref_interface_style_dark">Dark</string>
+    <!-- language -->
+    <string name="pref_interface_language_title">Language</string>
+    <string name="pref_interface_language_ru">RU</string>
+    <string name="pref_interface_language_en">EN</string>
+    <string name="pref_interface_language_tr">TR</string>
+    <string name="pref_interface_language_de">DE</string>
+    <!-- animation -->
+    <string name="pref_interface_animation_title">Animation</string>
+    <!-- chats preferences -->
+    <string name="pref_chats_font_size_title">Font size</string>
+    <string name="pref_chats_clear_title">Clear chats</string>
+    <string name="pref_chats_security_title">Security</string>
+    <!-- chat's security preferences -->
+    <string name="pref_chats_import_key_title">Export key</string>
+    <string name="pref_chats_export_key_title">Import key</string>
+    <string name="pref_chats_remove_key_title">Remove key</string>
+    <string name="password_title">Input password</string>
+    <string name="password_empty_error">Password can\'t be empty</string>
+    <string name="password_wrong_error">Wrong password</string>
+    <string name="user_key_removed_message">Key was removed</string>
+    <!-- accounts -->
+    <string name="pref_telephony_accounts">Accounts</string>
+    <!-- encryption -->
+    <string name="pref_telephony_encryption_type_title">Encryption</string>
+    <string name="pref_telephony_encryption_type_none">Off</string>
+    <string name="pref_telephony_encryption_type_srtp">SRTP</string>
+    <!-- profile preferences -->
+    <string name="pref_profile_balance_title">Balance</string>
+    <string name="pref_profile_balance_summary_default">0 $</string>
+    <string name="pref_profile_profile_title">My profile</string>
+    <!-- video -->
+    <string name="pref_telephony_video_enabled_title">Enable video</string>
+    <string name="pref_telephony_video_resolution_wifi_title">Video resolution (Wi-Fi)</string>
+    <string name="pref_telephony_video_resolution_cell_title">Video resolution (Cell)</string>
+    <string name="pref_telephony_video_resolution_qvga">QVGA</string>
+    <string name="pref_telephony_video_resolution_vga">VGA</string>
+    <string name="pref_telephony_video_resolution_720p">720p</string>
+    <string name="pref_telephony_noise_suppression_title">Noise/Echo reduction</string>
+    <string name="pref_telephony_noise_suppression_none">Off</string>
+    <string name="pref_telephony_noise_suppression_soft">Soft</string>
+    <string name="pref_telephony_noise_suppression_aggressive">Hard</string>
+    <!-- info preferences -->
+    <string name="pref_info_about_title">About</string>
+    <string name="pref_info_what_new_title">What\'s new</string>
+    <string name="pref_info_known_bugs_title">Known bugs</string>
+    <string name="pref_info_help_title">Help</string>
+    <string name="pref_info_about_url">http://files.swisstok.ru/info/dmc_about_en.html</string>
+    <!-- debug -->
+    <string name="pref_debug_mode_title">Debug mode</string>
+    <string name="pref_debug_mode_on_warning">Debug mode increases the amount of data applications and uses personal data</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="pref_debug_codecs_title">Codecs</string>
+    <string name="pref_debug_calls_log_title">Calls logs</string>
+    <string name="pref_debug_calls_history_title">Calls history</string>
+    <string name="pref_debug_calls_quality_log_title">Calls quality log</string>
+    <string name="pref_debug_calls_chat_log_title">Chat log</string>
+    <string name="pref_debug_db_log_title">DB log</string>
+    <string name="pref_debug_queries_log_title">Queries log</string>
+    <string name="pref_debug_send_bug_title">Send report</string>
+    <!-- codecs -->
+    <string name="pref_debug_codecs_audio_title">Audio codecs %s</string>
+    <string name="pref_debug_codecs_video_title">Video codecs %s</string>
+    <string name="pref_debug_codecs_wifi_title">(Wi-Fi)</string>
+    <string name="pref_debug_codecs_cell_title">(Cell)</string>
+    <!-- profile -->
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_debug_send_report_subject">Subject</string>
+    <string name="pref_debug_send_report_message">Description</string>
+    <string name="pref_debug_send_report_calls_log">Calls log</string>
+    <string name="pref_debug_send_report_calls_history_log">Calls history log</string>
+    <string name="pref_debug_send_report_calls_quality_log">Calls quality log</string>
+    <string name="pref_debug_send_report_chats_log">Chats log</string>
+    <string name="pref_debug_send_report_db_log">BD log</string>
+    <string name="pref_debug_send_report_queries_log">Queries log</string>
+    <string name="pref_debug_send_report_trace_log">Trace log</string>
+    <string name="send_report">Send report</string>
+    <string name="pref_info_what_new_url">http://files.swisstok.ru/info/dmc_whatsnew-android_en.html</string>
+    <string name="pref_info_known_issues_url">http://files.swisstok.ru/info/dmc_knownbugs-android_en.html</string>
+    <string name="pref_info_help_url"><![CDATA[https://docs.google.com/gview?embedded=true&url=http://files.swisstok.ru/info/dodicall_userguide_en.pdf]]></string>
+    <string name="list_default_empty">No data</string>
+    <string name="login_progress_dialog_text">Login…</string>
+    <string name="login_error">Server is not available</string>
+    <string name="login_no_network">No network connection</string>
+    <string name="empty_or_unknown_log">Log is empty</string>
+    <string name="clipboard_msg">Copied to clipboard</string>
+    <string name="pref_telephony_account_default_title">Default</string>
+    <string name="pref_debug_send_progress_msg">Sending issue…</string>
+    <string name="pref_debug_send_report_success_send_msg">Issue #%1$d successfully sent</string>
+    <string name="pref_debug_send_report_fail_send_msg">Sending failed</string>
+    <string name="login_button_test">Login (test)</string>
+    <string name="profile_devices_title">Devices</string>
+    <string name="profile_extra_contacts_title">Extra contacts</string>
+    <string name="action_profile_edit">Edit</string>
+    <string name="action_profile_add_to_group">Add to group</string>
+    <string name="action_profile_block">Block</string>
+    <string name="action_profile_delete">Delete</string>
+    <string name="profile_last_seen_offline_title">last seen %1$s at %2$s</string>
+    <string name="profile_last_seen_online_title">online</string>
+    <string name="profile_device_item_state_off">off</string>
+    <string name="profile_device_item_state_on">on</string>
+    <string name="contacts_filter_phone">Phonebook</string>
+    <string name="contacts_filter_saved">Saved</string>
+    <string name="block_user_confirm">Are you sure you want to block this user?</string>
+    <string name="delete_user_confirm">Are you sure you want to delete this user?</string>
+    <string name="base_user_status_offline">Offline</string>
+    <string name="base_user_status_online">Online</string>
+    <string name="base_user_status_hidden">Hidden</string>
+    <string name="base_user_status_away">Away</string>
+    <string name="base_user_status_dnd">Dnd</string>
+    <string name="change_status_done_button">Done</string>
+    <string name="title_activity_change_status">Change status</string>
+    <string name="extra_status_hint">Extra status text</string>
+    <string name="user_blocked_status">Blocked</string>
+    <string name="profile_blocked_title">User blocked</string>
+    <string name="profile_unblock_button_text">Unblock</string>
+    <string name="contact_unblocked_msg">Contact unblocked</string>
+    <string name="contact_blocked_msg">Contact blocked</string>
+    <string name="contacts_filter_white">White</string>
+    <string name="profile_delete_progress_msg">Deleting…</string>
+    <string name="profile_set_favorite_progress_msg">Updating…</string>
+    <string name="profile_block_progress_msg">Blocking…</string>
+    <string name="default_progress_dialog_msg">Loading…</string>
+    <string name="pref_debug_clear_logs_title">Clear logs</string>
+    <string name="pref_debug_clear_logs_done_msg">Cleaning logs completed</string>
+    <string name="title_activity_my_profile">My profile</string>
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+    <string name="profile_extra_contact_type_mobile">mobile</string>
+    <string name="contact_save_confirm_msg">Contact will be copied and saved to \"saved\" category</string>
+    <string name="contact_save_failed_msg">Saving error</string>
+    <string name="invite_header_title">Invitations</string>
+    <string name="request_header_title">Requests</string>
+    <string name="profile_request_sent_msg">Your request has been sent</string>
+    <string name="profile_invite_msg">User wants to add you to contact list</string>
+    <string name="profile_invite_accept_button_text">Add</string>
+    <string name="profile_invite_decline_button_text">Decline</string>
+    <string name="pref_common_white_list_default_summary">0 contacts</string>
+    <string name="pref_debug_trace_log_title">Trace log</string>
+    <string name="pref_debug_application_log_title">Application log</string>
+    <string name="send_report_confirm_no_msg_no_sbj">Fields \"Subject\" and \"Description\" is not filled. Send bug report?</string>
+    <string name="send_report_confirm_no_sbj">Fields \"Subject\" is not filled. Send bug report?</string>
+    <string name="send_report_confirm_no_msg">Fields \"Description\" is not filled. Send bug report?</string>
+    <string name="balance_url_test">https://my.test.swisstok.ru/Finances/payment/payment</string>
+    <string name="balance_url_industrial">https://sso.dodidone.pro/login</string>
+    <string name="action_profile_add_to_white">Add to white</string>
+    <string name="profile_add_to_white_progress_msg">Add to white list…</string>
+    <string name="contact_added_to_white_list_msg">Contact was added to white list</string>
+    <string name="action_profile_remove_from_white">Remove from white</string>
+    <string name="profile_remove_from_white_progress_msg">Removing from white list…</string>
+    <string name="contact_removed_from_white_list_msg">Contact was removed from white list</string>
+    <string name="action_create_contact">Create contact</string>
+    <string name="edit_profile_cancel">Cancel</string>
+    <string name="edit_profile_save">Save</string>
+    <string name="menu_item_chat_settings">Chat settings</string>
+    <string name="menu_item_add_user">Add user</string>
+    <string name="menu_item_remove_user">Remove user</string>
+    <string name="menu_item_remove_messages">Remove messages</string>
+    <string name="profile_edit_firstname_hint">First name</string>
+    <string name="profile_edit_lastname_hint">Last name</string>
+    <string name="edit_profile_extra_contact_hint">Phone</string>
+    <string name="save_contact_progress_msg">Save…</string>
+    <string name="read_contacts_explanation">For synchronizing with dodicall app you should allow
+        access to your phonebook
+    </string>
+    <string name="save_to_ddc_confirm_msg">Contact will be saved to \"dodicall\" category</string>
+    <string name="save_to_ddc_success_msg">Contact successfully saved</string>
+    <string name="profile_invite_button_text">Add to contact list</string>
+    <string name="title_activity_choose_contacts">Choose contacts</string>
+    <string name="menu_item_done">Done</string>
+    <string name="progress_message_rename_chat">Renaming of the chat…</string>
+    <string name="progress_message_delete_chats">Deleting…</string>
+    <string name="progress_message_creating_chat">Creating chat…</string>
+    <string name="last_message_removed"><![CDATA[User <b>%s</b> removed a message]]></string>
+    <string name="last_message_contact"><![CDATA[User <b>%s</b> sent a contact]]></string>
+    <string name="last_message_quoted"><![CDATA[User <b>%s</b> quoted messages]]></string>
+    <string name="cannot_rename_chat">Cannot rename the chat</string>
+    <string name="action_start_chat">Start chat</string>
+    <string name="chat_subject">Subject of the chat</string>
+    <string name="rename">Rename</string>
+    <string name="chat_has_rename">Chat has renamed to %1$s</string>
+    <string name="chat_name">Name</string>
+    <string name="title_activity_chat_settings">Chat settings</string>
+    <string name="attach_content_to_chat_title">Attach</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="select_from_gallery">Select from gallery</string>
+    <string name="send_contact">Send a contact</string>
+    <string name="enter_message">Enter a message</string>
+    <string name="dodicall_search_title">dodicall search</string>
+    <string name="notification_message_create">creates chat</string>
+    <string name="notification_message_invite_full">%s invited you to chat</string>
+    <string name="notification_message_invite">invites</string>
+    <string name="notification_message_revoke">revokes</string>
+    <string name="notification_message_leave">leave the chat</string>
+    <string name="notification_message_remove">remove the chat</string>
+    <string name="call_screen_accept">Accept</string>
+    <string name="call_screen_answer_msg">Message</string>
+    <string name="call_screen_awaiting">Awaiting</string>
+    <string name="call_screen_decline">Decline</string>
+    <string name="call_type_incoming">Incoming call</string>
+    <string name="incoming_screen_default_name">Unknown number</string>
+    <string name="active_call_audio_src">Audio source</string>
+    <string name="active_call_mic">Mic</string>
+    <string name="active_call_video">Video</string>
+    <string name="active_call_go_to_chat">Start chat</string>
+    <string name="active_call_extra">Extra</string>
+    <string name="add_to_conversation">Add</string>
+    <string name="active_call_transfer">Call transfer</string>
+    <string name="chat_date_today">today</string>
+    <string name="chat_date_yesterday">yesterday</string>
+    <string name="chat_date_separator_today">Today</string>
+    <string name="chat_date_separator_yesterday">Yesterday</string>
+    <string name="alert_dialog_message_delete_chats_confirm">Are you sure you want to delete the
+        selected chats from the list of chat rooms? You will no longer be able to view the message.
+    </string>
+    <string name="alert_dialog_message_delete_messages_confirm">Are you sure you want to delete the
+        selected messages? It will be impossible to restore these messages.
+    </string>
+    <string name="action_remove_user">Remove members</string>
+    <string name="action_remove_messages">Remove messages</string>
+    <string name="select_all">Select all</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="yes_delete_chats">Yes, delete</string>
+    <string name="toolbar_selected_chats_count">Selected: %1$d</string>
+    <string name="chat_message_actions_title">Messages</string>
+    <string name="chat_message_action_answer">Reply</string>
+    <string name="chat_message_action_select">Select</string>
+    <string name="chat_message_action_remove">Remove</string>
+    <string name="chat_message_action_edit">Change</string>
+    <string name="chat_message_action_info">Info about message</string>
+    <string name="chat_message_copied_to_clipboard">Message was copied to clipboard</string>
+    <string name="chat_message_status_removed">Message was removed</string>
+    <string name="permissions_explanation">For synchronizing with dodicall app you should allow
+        access to your phonebook \n Audio record should be allowed for a voice calls
+    </string>
+    <string name="close_explanation">Application does not obtain the necessary permits and will be
+        closed
+    </string>
+    <string name="external_storage_permissions_explanation">Для сохранения ключа в файл разрешите доступ к файловой системе</string>
+    <string name="external_storage_close_explanation">Экспорт в файл невозможен: приложение не получило необходимых разрешений</string>
+    <string name="unable_create_chat">Unable to create chat</string>
+    <string name="outgoing_call">Outgoing call</string>
+    <string name="unable_start_call">Unable to start call</string>
+    <string name="contact_has_no_number">Contact has not number</string>
+    <string name="conference">Conference</string>
+    <string name="tariff">Tariff</string>
+    <string name="unknown_number">Unknown number</string>
+    <string name="voice_call">Voice call</string>
+    <string name="video_call">Video call</string>
+    <string name="chat_is_not_active">Chat is closed</string>
+    <string name="user">User</string>
+    <string name="chat_unread_messages">Unread messages</string>
+    <string name="audio_src_headset">Headphone</string>
+    <string name="audio_src_phone">Phone</string>
+    <string name="audio_src_speaker">Speaker</string>
+    <string name="notification_incoming_call">Incoming dodicall call</string>
+    <string name="notification_active_call">Current dodicall call</string>
+    <string name="notification_outgoing_call">Outgoing dodicall call</string>
+    <string name="notification_answer_call">Answer</string>
+    <string name="notification_decline_call">Decline</string>
+    <string name="notification_end_call">Finish</string>
+    <string name="available_areas_loading_msg">Loading available areas…</string>
+    <string name="available_areas_dialog_title">Areas selection</string>
+    <string name="notification_write_message">WRITE</string>
+    <string name="notification_reply_message">REPLY</string>
+    <string name="notification_message_subject">renames chat to</string>
+    <string name="chat_message_status_sent">Sent</string>
+    <string name="chat_message_status_delivered">Delivered to the server</string>
+    <string name="menu_item_manage_users">Chat members</string>
+    <string name="action_add_users_chat">Add users</string>
+    <string name="toolbar_selected_contacts_count">Remove from chat: %1$d</string>
+    <string name="alert_title_delete_contacts">Remove members from chat</string>
+    <string name="alert_dialog_message_delete_contacts_confirm">Are you sure you want to remove the
+        selected members from the chat
+    </string>
+    <string name="progress_message_update_members_chat">Updating members…</string>
+    <string name="open_dialpad">Dialpad</string>
+    <string name="hide_dialpad">Hide dialpad</string>
+    <string name="history_status_outgoing_success">outgoing</string>
+    <string name="history_status_missed">missed</string>
+    <string name="history_status_aborted">aborted</string>
+    <string name="history_status_declined">declined</string>
+    <string name="history_status_incoming_success">incoming</string>
+    <string name="history_status_detail_outgoing_success">Outgoing</string>
+    <string name="history_status_detail_missed">Missed</string>
+    <string name="history_status_detail_aborted">Aborted</string>
+    <string name="history_status_detail_declined">Declined</string>
+    <string name="history_status_detail_incoming_success">Incoming</string>
+    <string name="duration_sec">sec.</string>
+    <string name="duration_min">min.</string>
+    <string name="duration_hour">hour.</string>
+    <string name="select_number_dialog_title">Select number</string>
+    <string name="notification_open">OPEN</string>
+    <string name="alert_dialog_message_logout">Are you sure you want to log out?</string>
+    <string name="missed_call">Missed call dodicall</string>
+    <string name="chat_message_text">%1$s: %2$s</string>
+    <string name="notification_new_call">CALL</string>
+    <string name="toast_unable_create_chat">Unable to create chat</string>
+    <string name="notification_missed_call_from">Missed call from %1$s</string>
+    <string name="new_invitation">New invitation from user</string>
+    <string name="notification_decline_invitation">DECLINE</string>
+    <string name="notification_accept_invitation">ACCEPT</string>
+    <string name="notification_invitation_you">User %1$s invited you</string>
+    <string name="notification_messages_in_chats">%1$s in %2$s</string>
+    <string name="action_set_all_read">Mark as read</string>
+    <string name="new_contact">Create new contact</string>
+    <string name="add_to_exist_contact">Add number to existing contact</string>
+    <string name="chat_no_members">No members</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="notification_missed_calls_count">Missed calls: %1$d</string>
+    <string name="title_activity_choose_contact">Choose contact</string>
+    <string name="chat_message_encrypted">Encrypted message</string>
+    <string name="active_call_is_present_error">В данный момент разговор по второй линии не поддерживается. Звершите текущий разговор и повторите попытку.</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_quote">Quote</string>
+    <string name="chat_messages_copied_to_clipboard">Сообщения скопированы в буфер обмена</string>
+    <string name="chat_messages_quoted">Quoted messages</string>
+    <string name="chat_messages_forward">Forwarded messages</string>
+    <string name="chat_messages_quote_forward_count">Messages: %d</string>
+    <string name="dodicall_search_hint">Search user</string>
+    <string name="fab_new_contact">Create contact</string>
+    <string name="fab_dodicall_search_title">Search contact in dodicall</string>
+    <string name="title_activity_create_contact">Create contact</string>
+    <string name="error_first_name_empty">First name cannot be empty</string>
+    <string name="error_last_name_empty">Last name cannot be empty</string>
+    <string name="title_activity_edit_profile">Edit contact</string>
+    <string name="title_activity_forward_messages">Forward message</string>
+
+    <!--Key Export-->
+    <string name="key_export_title">Ваш персональный ключ\nшифрования сгенерирован</string>
+    <string name="key_export_message">Сохраните ключ в безопасное место\nдля восстановления данных в случае\nсмены устройства</string>
+    <string name="copy_key">Copy</string>
+    <string name="download_key">Save</string>
+    <string name="share_key">Open with</string>
+    <string name="continue_without_key_saving">CONTINUE</string>
+    <string name="key_was_exported">Key was exported to file in Downloads directory</string>
+
+    <!--Key Import-->
+    <string name="key_import_title">Для доступа к своим чатам\nвведите ранее созданный\nключ шифрования</string>
+    <string name="key_import_message">Для переноса ключа с помощью\nQR-кода Вам потребуется Ваше старое\nустройство. Для переноса ключа через\nкопирование скопируйте ранее\nсохраненный ключ</string>
+    <string name="import_key_from_clipboard">Cope key</string>
+    <string name="import_key_from_qr">Scan QR-code</string>
+    <string name="import_key_from_clipboard_title">Import key</string>
+    <string name="import_key_from_clipboard_hint">Paste copied key from clipboard</string>
+    <string name="import_key_from_clipboard_length_error">Key\'s minimum length = 2048 chars</string>
+    <string name="action_add_user_to_conference">Add</string>
+</resources>

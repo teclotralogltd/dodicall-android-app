@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:alertDialogTheme">@style/AppThemeDialog</item>
+        <item name="actionMenuTextColor">@color/main_text_color</item>
+        <item name="alertDialogTheme">@style/AppThemeDialog</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@drawable/indexer_bg</item>
+        <item name="android:fastScrollTextColor">@color/colorAccent</item>
+        <item name="android:fastScrollOverlayPosition">floating</item>
+        <item name="android:windowBackground">@drawable/default_window_bg</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.ActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/AppTheme.ActionOverflowButtonStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/back</item>
+        <item name="homeAsUpIndicator">@drawable/back</item>
+        <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+        <item name="actionBarStyle">@style/AppActionBarStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:progressBarStyle">@style/AppThemeProgress</item>
+        <item name="android:progressBarStyleLarge">@style/AppThemeProgress</item>
+        <item name="dialpadStyle">@style/Dialpad.Light</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColorPrimary">@color/main_text_color</item>
+
+        <!-- TODO: fix menu items background -->
+        <!--<item name="android:selectableItemBackground">@drawable/primary_light</item>-->
+    </style>
+
+    <style name="AppPreferenceTheme" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceFragmentListStyle">@style/AppPreferenceFragmentListStyle</item>
+        <!--<item name="preferenceFragmentStyle">@style/AppPreferenceFragmentStyle</item>-->
+    </style>
+
+    <style name="AppTheme.White" parent="AppTheme">
+        <item name="colorPrimaryDark">#bdbdbd</item>
+    </style>
+
+    <style name="AppTheme.Preferences" parent="AppTheme.NoActionBar">
+        <item name="android:selectableItemBackground">@drawable/preference_bg</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+        <!--<item name="android:background">@android:color/white</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeSplitBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseDrawable">@drawable/back</item>
+        <item name="actionModeStyle">@style/AppTheme.ActionModeStyle</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:homeAsUpIndicator">@drawable/back</item>
+        <item name="homeAsUpIndicator">@drawable/back</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Splash">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Main" parent="@style/AppTheme.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeSplitBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseDrawable">@drawable/back</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/status_offline"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/status_offline"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/status_dnd"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/status_online"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/blocked_small"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@drawable/status_unknown"
+        android:maxLevel="999"
+        android:minLevel="999"/>
+</level-list>

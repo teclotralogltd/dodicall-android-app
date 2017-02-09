@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/quoted_message_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quote_back"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/reply_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        tools:text="Ivan Ivanovich"/>
+
+    <TextView
+        android:id="@+id/reply_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        tools:text="28.11.2303 12:44"/>
+
+    <TextView
+        android:id="@+id/reply_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Ivan Ivans jadfhalskfh a s k d j d f h a s k  ldjfha skdlj fh askdfh asdjkfh asdfklh adsfovich"/>
+</LinearLayout>

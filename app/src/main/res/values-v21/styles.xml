@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="AppTheme.Dialog.WindowTitle" parent="RtlOverlay.DialogWindowTitle.AppCompat">
+        <item name="android:textAppearance">@style/AppTheme.Dialog.WindowTitle.Title</item>
+    </style>
+
+    <style name="AppTheme.Dialog.WindowTitle.Title" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/other_wrapper</item>
+    </style>
+
+    <style name="AppActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleStyle</item>
+        <item name="colorControlNormal">@color/tab_selected</item>
+    </style>
+
+</resources>

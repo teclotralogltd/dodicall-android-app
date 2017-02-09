@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/default_padding">
+        <include layout="@layout/contact_avatar_wrapper"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+            <EditText
+                style="@style/EditProfileName"
+                android:id="@+id/contact_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/profile_edit_firstname_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/max_name_length"
+                />
+            <EditText
+                style="@style/EditProfileName"
+                android:id="@+id/contact_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/profile_edit_lastname_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/max_name_length"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        style="@style/AppTheme.Profile.SmallRedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:paddingBottom="8dp"
+        android:gravity="bottom"
+        android:text="@string/profile_extra_contacts_title"
+        />
+    <include layout="@layout/divider_horizontal"/>
+    <LinearLayout
+        android:id="@+id/extra_contacts_list_wrapper"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<include layout="@layout/profile_edit_extra_contact"/>-->
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/add_extra_contact"
+        android:layout_width="50dp"
+        android:layout_height="84dp"
+        android:background="@drawable/primary_light_outside"
+        android:layout_gravity="right"
+        android:src="@drawable/add_extra_contact"
+        />
+</LinearLayout>

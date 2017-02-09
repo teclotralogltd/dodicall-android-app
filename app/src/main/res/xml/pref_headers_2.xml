@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.CommonPreferenceFragment"
+        android:key="pref_header_common"
+        android:title="@string/pref_header_common"
+        />
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.TelephonyPreferenceFragment"
+        android:key="pref_header_telephony"
+        android:title="@string/pref_header_telephony"
+        />
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.ChatsPreferenceFragment"
+        android:key="pref_header_chats"
+        android:title="@string/pref_header_chats"
+        />
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.InterfacePreferenceFragment"
+        android:key="pref_header_interface"
+        android:title="@string/pref_header_interface"
+        />
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.InfoPreferenceFragment"
+        android:key="pref_header_info"
+        android:title="@string/pref_header_info"
+        />
+    <ru.swisstok.dodicall.preference.PreferenceHeader
+        android:fragment="ru.swisstok.dodicall.preference.fragment.DebugPreferenceFragment"
+        android:key="pref_header_debug"
+        android:title="@string/pref_header_debug"
+        />
+</PreferenceScreen>

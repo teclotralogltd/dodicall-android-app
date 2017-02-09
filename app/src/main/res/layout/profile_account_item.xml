@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/primary_light"
+    android:descendantFocusability="blocksDescendants">
+
+    <RadioButton
+        android:id="@+id/account_is_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/default_padding"
+        android:background="@android:color/transparent"
+        android:button="@drawable/profile_account_favorite_checkbox"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/account_is_favorite"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/account_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/AppTheme.Profile.AccountItem.TypeTextAppearance"
+            />
+
+        <TextView
+            android:id="@+id/account_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAppearance="@style/AppTheme.Profile.AccountItem.NumberTextAppearance"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/account_call"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/primary_light_outside"
+        app:srcCompat="@drawable/contacts_list_item_call_ic"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_width"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividerColor"
+        />
+</RelativeLayout>

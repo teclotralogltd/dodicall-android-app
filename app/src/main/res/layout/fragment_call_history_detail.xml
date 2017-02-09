@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chats_item_height"
+        tools:ignore="RtlHardcoded">
+
+        <ru.swisstok.dodicall.view.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/delete_check"
+            app:defaultImage="@drawable/no_photo_user"/>
+
+        <ImageView
+            android:id="@+id/is_dodicall"
+            android:layout_width="19dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/avatar"
+            android:layout_alignRight="@id/avatar"
+            android:src="@drawable/d_medium"/>
+
+        <ImageButton
+            android:id="@+id/button_action_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/primary_light_outside"
+            tools:src="@drawable/contacts_list_item_call_ic"/>
+
+        <ImageButton
+            android:id="@+id/button_action_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/button_action_right"
+            android:background="@drawable/primary_light_outside"
+            tools:src="@drawable/contacts_list_item_chat_ic"/>
+
+        <TextView
+            android:id="@+id/contact_name"
+            style="@style/AppTheme.Contact.Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/button_action_left"
+            android:layout_toRightOf="@id/avatar"
+            tools:text="Vasya Ivanov asdf asdf asdf asdf asdf"/>
+
+        <TextView
+            android:id="@+id/contact_status"
+            style="@style/AppTheme.Contact.Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/contact_name"
+            android:layout_below="@id/contact_name"
+            android:layout_toLeftOf="@id/button_action_left"
+            android:drawableLeft="@drawable/contacts_list_item_status_ic"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/base_user_status_offline"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dividerColor"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/list_default_empty"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~
+  ~ Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+  ~
+  ~ This file is part of dodicall.
+  ~ dodicall is free software : you can redistribute it and / or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~ dodicall is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/call_screen_bg"
+    tools:ignore="RtlHardcoded">
+
+    <ru.swisstok.dodicall.view.RoundedImageView
+        android:id="@+id/group_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_description_avatar"
+        app:defaultImage="@drawable/no_photo_group"/>
+
+    <Button
+        android:id="@+id/mic"
+        style="@style/IncomingCallButton"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:drawableTop="@drawable/mute_selector"
+        android:text="@string/active_call_mic"/>
+
+    <Button
+        android:id="@+id/add_user"
+        style="@style/IncomingCallButton"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mic"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@id/mic"
+        android:drawableTop="@drawable/add_user_selector"
+        android:text="@string/action_add_user_to_conference"/>
+
+    <ru.swisstok.dodicall.view.SelectAudioSrcButton
+        android:id="@+id/audio_src"
+        style="@style/IncomingCallButton"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mic"
+        android:layout_alignBottom="@+id/mic"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/group_avatar"
+        android:layout_toRightOf="@+id/group_avatar"
+        android:drawableTop="@drawable/audio_source_selector"
+        android:text="@string/active_call_audio_src"
+        tools:ignore="RtlHardcoded"/>
+
+    <Button
+        android:id="@+id/decline"
+        style="@style/IncomingCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:drawableTop="@drawable/end_call_selector"
+        android:text="@string/call_screen_decline"/>
+
+</RelativeLayout>

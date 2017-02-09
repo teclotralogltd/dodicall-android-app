@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/row_height"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/default_padding"
+              android:paddingRight="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/contacts_list_item_status_ic"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/contacts_list_item_status_ic"
+        android:gravity="center_vertical"
+        android:text="@string/base_user_status_offline"
+        android:textAppearance="@style/AppTheme.ChangeStatus.StatusTextAppearance"/>
+
+    <RadioButton
+        android:id="@+id/status_selection_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"/>
+</LinearLayout>

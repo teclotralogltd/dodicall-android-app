@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding">
+    <TextView
+        android:id="@+id/profile_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/default_padding"
+        android:textAppearance="@style/AppTheme.Profile.DeviceItem.TextAppearance"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        />
+    <TextView
+        android:id="@+id/profile_device_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAppearance="@style/AppTheme.Profile.DeviceItem.TextAppearance"
+        android:textAllCaps="true"
+        />
+    <ImageView
+        android:id="@+id/profile_device_mobile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/dialpad_connection"
+        />
+</LinearLayout>

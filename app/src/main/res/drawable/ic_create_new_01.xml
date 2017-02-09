@@ -1,0 +1,37 @@
+<!--
+  ~
+  ~ Copyright (C) 2016, Telco Cloud Trading & Logistic Ltd
+  ~
+  ~ This file is part of dodicall.
+  ~ dodicall is free software : you can redistribute it and / or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~ dodicall is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with dodicall.If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:pathData="M9,7m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:fillColor="#454545"/>
+    <path
+        android:pathData="M9,13c-3.314,0 -6,2.686 -6,6v3h6.42l4.775,-5.993C13.158,14.211 11.223,13 9,13z"
+        android:fillColor="#454545"/>
+    <path
+        android:pathData="M21.454,10.718c-0.433,-0.345 -1.061,-0.273 -1.405,0.159l-6.854,8.603c0.685,0.545 0.903,0.72 1.563,1.246l6.855,-8.603C21.956,11.691 21.888,11.062 21.454,10.718z"
+        android:fillColor="#454545"/>
+    <path
+        android:pathData="M12.75,21.521l1.385,-0.013l-1.564,-1.245z"
+        android:fillColor="#454545"/>
+</vector>

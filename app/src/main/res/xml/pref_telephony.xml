@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen
+        android:title="@string/pref_telephony_accounts"
+        android:fragment="ru.swisstok.dodicall.preference.fragment.AccountsListPreferenceFragment"
+        />
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_telephony_encryption"
+        android:title="@string/pref_telephony_encryption_type_title"
+        android:entries="@array/pref_telephony_encryption_type"
+        android:entryValues="@array/pref_telephony_encryption_type_values"
+        app:tableColumn="VoipEncryption"
+        />
+    <ru.swisstok.dodicall.preference.CustomSwitchPreference
+        android:key="pref_telephony_video_enabled"
+        android:title="@string/pref_telephony_video_enabled_title"
+        app:tableColumn="VideoEnabled"
+        />
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_telephony_video_resolution_wifi"
+        android:dependency="pref_telephony_video_enabled"
+        android:title="@string/pref_telephony_video_resolution_wifi_title"
+        android:entries="@array/pref_telephony_video_resolutions"
+        android:entryValues="@array/pref_telephony_video_resolutions_values"
+        app:tableColumn="VideoSizeWifi"
+        />
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_telephony_video_resolution_cell"
+        android:dependency="pref_telephony_video_enabled"
+        android:title="@string/pref_telephony_video_resolution_cell_title"
+        android:entries="@array/pref_telephony_video_resolutions"
+        android:entryValues="@array/pref_telephony_video_resolutions_values"
+        app:tableColumn="VideoSizeCell"
+        />
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_telephony_noise_suppression"
+        android:title="@string/pref_telephony_noise_suppression_title"
+        android:entries="@array/pref_telephony_noise_suppression"
+        android:entryValues="@array/pref_telephony_noise_suppression_values"
+        app:tableColumn="EchoCancellationMode"
+        />
+</PreferenceScreen>

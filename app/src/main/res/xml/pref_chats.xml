@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<Preference-->
+        <!--android:key="pref_chats_security"-->
+        <!--android:title="@string/pref_chats_security_title"-->
+        <!--android:fragment="ru.swisstok.dodicall.preference.fragment.ChatSecurityPreferenceFragment"/>-->
+    <ru.swisstok.dodicall.preference.SeekBarPreference
+        android:defaultValue="16"
+        android:dialogLayout="@layout/dialog_slider"
+        android:key="pref_chats_font_size"
+        android:title="@string/pref_chats_font_size_title"
+        app:maxValue="24"
+        app:minValue="10"
+        app:tableColumn="GuiFontSize"/>
+    <!-- :( bad practice -->
+    <Preference
+        android:key="pref_chats_clear"
+        android:title="@string/pref_chats_clear_title"/>
+</PreferenceScreen>

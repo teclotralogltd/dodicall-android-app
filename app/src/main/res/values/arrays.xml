@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_telephony_video_resolutions">
+        <item>@string/pref_telephony_video_resolution_qvga</item>
+        <item>@string/pref_telephony_video_resolution_vga</item>
+        <item>@string/pref_telephony_video_resolution_720p</item>
+    </string-array>
+    <string-array name="pref_telephony_video_resolutions_values">
+        <item>@string/pref_telephony_video_resolution_qvga_value</item>
+        <item>@string/pref_telephony_video_resolution_vga_value</item>
+        <item>@string/pref_telephony_video_resolution_720p_value</item>
+    </string-array>
+    <string-array name="pref_interface_styles">
+        <item>@string/pref_interface_style_default</item>>
+        <item>@string/pref_interface_style_light</item>
+        <item>@string/pref_interface_style_dark</item>>
+    </string-array>
+    <string-array name="pref_interface_styles_values">
+        <item>@string/pref_interface_style_default_value</item>>
+        <item>@string/pref_interface_style_light_value</item>
+        <item>@string/pref_interface_style_dark_value</item>>
+    </string-array>
+    <string-array name="pref_interface_languages">
+        <item>@string/pref_interface_language_ru</item>>
+        <item>@string/pref_interface_language_en</item>
+        <item>@string/pref_interface_language_tr</item>
+        <!--<item>@string/pref_interface_language_de</item>>-->
+    </string-array>
+    <string-array name="pref_interface_languages_values">
+        <item>@string/pref_interface_language_ru_value</item>>
+        <item>@string/pref_interface_language_en_value</item>
+        <item>@string/pref_interface_language_tr_value</item>
+        <!--<item>@string/pref_interface_language_de_value</item>>-->
+    </string-array>
+    <string-array name="pref_telephony_encryption_type">
+        <item>@string/pref_telephony_encryption_type_none</item>
+        <item>@string/pref_telephony_encryption_type_srtp</item>
+    </string-array>
+    <string-array name="pref_telephony_encryption_type_values">
+        <item>@string/pref_telephony_encryption_type_none_value</item>
+        <item>@string/pref_telephony_encryption_type_srtp_value</item>
+    </string-array>
+    <string-array name="pref_telephony_noise_suppression">
+        <item>@string/pref_telephony_noise_suppression_none</item>
+        <item>@string/pref_telephony_noise_suppression_soft</item>
+        <item>@string/pref_telephony_noise_suppression_aggressive</item>
+    </string-array>
+    <string-array name="pref_telephony_noise_suppression_values">
+        <item>@string/pref_telephony_noise_suppression_none_value</item>
+        <item>@string/pref_telephony_noise_suppression_soft_value</item>
+        <item>@string/pref_telephony_noise_suppression_aggressive_value</item>
+    </string-array>
+    <string-array name="pref_headers">
+        <item>@string/pref_header_common</item>
+        <item>@string/pref_header_telephony</item>
+        <item>@string/pref_header_chats</item>
+        <item>@string/pref_header_interface</item>
+        <item>@string/pref_header_info</item>
+        <item>@string/pref_header_debug</item>
+    </string-array>
+</resources>

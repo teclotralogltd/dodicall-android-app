@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pref_chats_font_size_min">11</integer>
+    <integer name="pref_chats_font_size_max">20</integer>
+    <integer name="max_name_length">40</integer>
+    <integer name="max_phone_length">20</integer>
+    <item name="pressed_alpha" type="integer" format="float">0.7</item>
+    <integer name="max_chat_name">30</integer>
+</resources>

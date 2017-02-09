@@ -1,0 +1,24 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_interface_style"
+        android:title="@string/pref_interface_style_title"
+        android:entries="@array/pref_interface_styles"
+        android:entryValues="@array/pref_interface_styles_values"
+        android:enabled="false"
+        app:tableColumn="GuiThemeName"
+        />
+    <ru.swisstok.dodicall.preference.CustomListPreference
+        android:key="pref_interface_language"
+        android:title="@string/pref_interface_language_title"
+        android:entries="@array/pref_interface_languages"
+        android:entryValues="@array/pref_interface_languages_values"
+        app:tableColumn="GuiLanguage"
+        />
+    <ru.swisstok.dodicall.preference.CustomSwitchPreference
+        android:key="pref_interface_animation"
+        android:title="@string/pref_interface_animation_title"
+        app:tableColumn="GuiAnimation"
+        />
+</PreferenceScreen>

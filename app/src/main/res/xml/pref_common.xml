@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.swisstok.dodicall.preference.CustomSwitchPreference
+        android:key="pref_common_white_list"
+        android:summary="@string/pref_common_white_list_default_summary"
+        android:title="@string/pref_common_white_list_title"
+        app:tableColumn="DoNotDesturbMode"/>
+</PreferenceScreen>

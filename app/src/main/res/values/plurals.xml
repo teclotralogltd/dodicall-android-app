@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="white_list_count">
+        <item quantity="zero">%1$d контактов</item>
+        <item quantity="one">%1$d контакт</item>
+        <item quantity="few">%1$d контакта</item>
+        <item quantity="many">%1$d контактов</item>
+    </plurals>
+    <plurals name="chat_accounts_count">
+        <item quantity="zero">%1$d человек</item>
+        <item quantity="one">%1$d человек</item>
+        <item quantity="few">%1$d человека</item>
+        <item quantity="many">%1$d человек</item>
+    </plurals>
+    <plurals name="delete_chats_count">
+        <item quantity="zero">Удалить %1$d чатов</item>
+        <item quantity="one">Удалить %1$d чат</item>
+        <item quantity="few">Удалить %1$d чата</item>
+        <item quantity="many">Удалить %1$d чатов</item>
+    </plurals>
+    <plurals name="delete_messages_count">
+        <item quantity="zero">Удалить %1$d сообщений</item>
+        <item quantity="one">Удалить %1$d сообщение</item>
+        <item quantity="few">Удалить %1$d сообщения</item>
+        <item quantity="many">Удалить %1$d сообщений</item>
+    </plurals>
+
+    <plurals name="notification_messages_count">
+        <item quantity="zero">%1$d новых сообщений</item>
+        <item quantity="one">%1$d новое сообщение</item>
+        <item quantity="two">%1$d новых сообщения</item>
+        <item quantity="few">%1$d новых сообщения</item>
+        <item quantity="many">%1$d новых сообщений</item>
+        <item quantity="other">%1$d новых сообщений</item>
+    </plurals>
+
+    <plurals name="notification_chats_count">
+        <item quantity="zero">%1$d чатов</item>
+        <item quantity="one">%1$d чате</item>
+        <item quantity="two">%1$d чатах</item>
+        <item quantity="few">%1$d чатах</item>
+        <item quantity="many">%1$d чатах</item>
+        <item quantity="other">%1$d чатах</item>
+    </plurals>
+
+    <plurals name="notification_invitation_to_chats_count">
+        <item quantity="two">%1$d новых приглашения в чат</item>
+        <item quantity="few">%1$d новых приглашения в чат</item>
+        <item quantity="many">%1$d новых приглашений в чат</item>
+        <item quantity="other">%1$d новых приглашений в чат</item>
+    </plurals>
+
+    <plurals name="notification_invitations_count">
+        <item quantity="zero">%1$d новых приглашений</item>
+        <item quantity="one">%1$d новое приглашение</item>
+        <item quantity="two">%1$d новых приглашения</item>
+        <item quantity="few">%1$d новых приглашений</item>
+        <item quantity="many">%1$d новых приглашений</item>
+        <item quantity="other">%1$d новых приглашений</item>
+    </plurals>
+</resources>
